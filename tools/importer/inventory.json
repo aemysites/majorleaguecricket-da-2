@@ -1,0 +1,2032 @@
+{
+  "fragments": [
+    {
+      "name": "nav",
+      "path": "/nav",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/videos",
+          "urlHash": "022518c96fdfd9af68c20c905f3fb6f7a6b9392f",
+          "uuid": "022518c9-00-5c1e475aeea8f0e0a60e76ccc6fd74f33c156520",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-header[1]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/home",
+          "urlHash": "0c43f0005237e8466f16bf37ce21bdb86d99608c",
+          "uuid": "0c43f000-00-5c1e475aeea8f0e0a60e76ccc6fd74f33c156520",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-header[1]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-00-5c1e475aeea8f0e0a60e76ccc6fd74f33c156520",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-header[1]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/teams",
+          "urlHash": "75f9ad5909cbbc561f596cd6ca36464dcd8cda8a",
+          "uuid": "75f9ad59-00-5c1e475aeea8f0e0a60e76ccc6fd74f33c156520",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-header[1]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches/stats",
+          "urlHash": "7d255ca59c57d0644c838b8cbc5223b8c6182ace",
+          "uuid": "7d255ca5-00-5c1e475aeea8f0e0a60e76ccc6fd74f33c156520",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-header[1]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/about",
+          "urlHash": "837df765b2fa39f044d1d9279d22e9e42cd0e22e",
+          "uuid": "837df765-00-5c1e475aeea8f0e0a60e76ccc6fd74f33c156520",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-header[1]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches/standings",
+          "urlHash": "d3debf58f3b5b22b03bf01b3865c1e9318d95f0b",
+          "uuid": "d3debf58-00-5c1e475aeea8f0e0a60e76ccc6fd74f33c156520",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-header[1]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/news",
+          "urlHash": "da7693fa891d97b5d2470389f7eb9288c900e343",
+          "uuid": "da7693fa-00-5c1e475aeea8f0e0a60e76ccc6fd74f33c156520",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-header[1]"
+        }
+      ],
+      "styles": {
+        "height": 116
+      }
+    },
+    {
+      "name": "footer",
+      "path": "/footer",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/videos",
+          "urlHash": "022518c96fdfd9af68c20c905f3fb6f7a6b9392f",
+          "uuid": "022518c9-07-296cbfe63e14a324ee0bdd34b9ce89e7a344fe41",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-footer[1]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/home",
+          "urlHash": "0c43f0005237e8466f16bf37ce21bdb86d99608c",
+          "uuid": "0c43f000-10-296cbfe63e14a324ee0bdd34b9ce89e7a344fe41",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-footer[1]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-178-296cbfe63e14a324ee0bdd34b9ce89e7a344fe41",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-footer[1]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/teams",
+          "urlHash": "75f9ad5909cbbc561f596cd6ca36464dcd8cda8a",
+          "uuid": "75f9ad59-07-296cbfe63e14a324ee0bdd34b9ce89e7a344fe41",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-footer[1]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches/stats",
+          "urlHash": "7d255ca59c57d0644c838b8cbc5223b8c6182ace",
+          "uuid": "7d255ca5-09-296cbfe63e14a324ee0bdd34b9ce89e7a344fe41",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-footer[1]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/about",
+          "urlHash": "837df765b2fa39f044d1d9279d22e9e42cd0e22e",
+          "uuid": "837df765-08-296cbfe63e14a324ee0bdd34b9ce89e7a344fe41",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-footer[1]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches/standings",
+          "urlHash": "d3debf58f3b5b22b03bf01b3865c1e9318d95f0b",
+          "uuid": "d3debf58-09-296cbfe63e14a324ee0bdd34b9ce89e7a344fe41",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-footer[1]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/news",
+          "urlHash": "da7693fa891d97b5d2470389f7eb9288c900e343",
+          "uuid": "da7693fa-07-296cbfe63e14a324ee0bdd34b9ce89e7a344fe41",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-footer[1]"
+        }
+      ],
+      "styles": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Columns",
+      "cluster": 1,
+      "source": "Columns block",
+      "target": "Columns block (columns1)",
+      "key": "columns1",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-04-c1eeb2a0886768c3eaa75de769c40cc4a8f66830",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[2]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-09-fcdb78019eb25c714a77399267816f610e198a4c",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[3]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-14-0b496e784f4076e04977996daf5e652dcce98575",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[4]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-19-a454ec11866212657dd7a9f0a7c0826b71a57f53",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[5]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-23-e8ed355d34f9e1885686422e63f4c26561e1a5df",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[6]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-28-6aac3f3f40777359b718772cf49fc8cf537adf1c",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[7]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-33-6ae7b7535bed3ea47e8ae93ef2296e172729852b",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[8]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-38-6d1d241ee41aca3abf4118cef2b7a12cd20ea79a",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[9]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-43-ac19a6d1c1022cd9a7e5c8c4030371a5c2e33693",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[10]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-48-899768ec2a814bdf229ff46ee9f344045ebd9d82",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[11]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-53-320e671f5f0c29a1d6d0d7bccf536827b07d23d8",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[12]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-58-ab4cb35c58821b913d957cb7bc9109f075fb087c",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[13]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-63-f068a86ba8ccf9e751466a1fa29d60f217be8d03",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[14]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-68-b3bdf9c9239bfd0cfe4afe9163af92ebe97397bc",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[15]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-73-7316a1e1debd36921eb68515caac5c1eaa6e9ad8",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[16]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-78-2ccd4c8e3ed61378ba78d926c8de50162176d200",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[17]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-83-ebdda2ea4ce15491933213f84e9a1eaae3618e13",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[18]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-88-77db93d8d2d8aacc3f1826bacbecafa90226a83d",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[19]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-93-3b205dc8dd93bd126683455eb58f11abb50b364b",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[20]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-98-5d293fa70ff0137c38d7afe23575cd90cad96b7d",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[21]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-103-b66e6181e327c2f06d6fb86f8b2f20cb83f51eb1",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[22]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-108-c4f53a085ca641b49b24f2c48b8d75f307588a84",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[23]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-113-4e08ba4644d415a361277afa6ec24fde8b5387dd",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[24]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-118-732ea2c59118ca06abfe6c5d6b02427caf1d4b4d",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[25]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-123-a0b10239c12da44c73c3eaffd61ce8f0d8d560d9",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[26]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-128-7cf0b007de0e46edb6f71a5de7acfe1b5bcf36a5",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[27]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-133-73f2ebe33f1fc83f89fb9ade838f04060004e77b",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[28]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-138-6c1062f3852f4213379241d59e9a4698e2c22b12",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[29]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-143-7761d520ccaafb5bcebc007f0e56f220c5c4959f",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[30]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-148-8998aca8d37d35fc1cd78dc34c8f6cabd3a6ab55",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[31]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-153-d19d5da6cf66263b260aed4557c8abd9bac2ff94",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[32]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-158-288c75a8d637606bf48817b6b1af587d912d8953",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[33]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-163-7911b0eb3cdeb553822ddc0184afbcf4e2de1266",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[34]/div[1]/div[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-168-b7460d1bb2173264eb977836a01b1c0c41b417c5",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[35]/div[1]/div[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 2,
+      "source": "Columns block",
+      "target": "Columns block (columns2)",
+      "key": "columns2",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-06-f23cd7c13c26c305952b4c1035598f701b35859e",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-11-fd6e29fd401d2d7cc164de4abfa175d7d2e131b4",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-16-40138140fa31178560d6e9a32dbe06c9b9968d9b",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-35-7b3789f12fb3c8bf9e902b9139e42eac982bc558",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[8]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-55-61ba426135e923b8fbdca6cab0ca389da4bb4b5c",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[12]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-65-0128f5d7949f503990fa3c09482e3269cf436914",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[14]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-75-64b7e2104afff6dfe2a51bbba246710dd8f99ead",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[16]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-90-feb7288cd8dd8ced696d84dce1543d04a2c44054",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[19]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-95-421c00d0c940c40d07aa0e558237e688737f3aa1",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[20]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-105-183337c899687d766ce536b22d482a4ea504c35d",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[22]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-115-61c26bef35b92d1815a7dab93b1d976d1376e692",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[24]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-120-8c76992422e1bd1e0247774c0c23a790fc955adb",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[25]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-125-7b5f4a12222e5702f6dbfb92721311edf3f3acbb",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[26]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-150-c2a233c67ad44feec8825a0162916bd306a2c25f",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[31]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-155-201d0d349c392d8ac17c2a1ef26e4181d1a96ed0",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[32]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-165-f39a8fc246e0978ce518923750712020a33a006e",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[34]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 3,
+      "source": "Columns",
+      "target": "Columns (columns3)",
+      "key": "columns3",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-178-296cbfe63e14a324ee0bdd34b9ce89e7a344fe41",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-footer[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches/stats",
+          "urlHash": "7d255ca59c57d0644c838b8cbc5223b8c6182ace",
+          "uuid": "7d255ca5-09-296cbfe63e14a324ee0bdd34b9ce89e7a344fe41",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-footer[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches/standings",
+          "urlHash": "d3debf58f3b5b22b03bf01b3865c1e9318d95f0b",
+          "uuid": "d3debf58-09-296cbfe63e14a324ee0bdd34b9ce89e7a344fe41",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-footer[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 4,
+      "source": "Columns block",
+      "target": "Columns block (columns4)",
+      "key": "columns4",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/videos",
+          "urlHash": "022518c96fdfd9af68c20c905f3fb6f7a6b9392f",
+          "uuid": "022518c9-07-296cbfe63e14a324ee0bdd34b9ce89e7a344fe41",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-footer[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "header",
+      "cluster": 5,
+      "source": "Header",
+      "target": "Header (header5)",
+      "key": "header5",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-00-5c1e475aeea8f0e0a60e76ccc6fd74f33c156520",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-header[1]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches/stats",
+          "urlHash": "7d255ca59c57d0644c838b8cbc5223b8c6182ace",
+          "uuid": "7d255ca5-00-5c1e475aeea8f0e0a60e76ccc6fd74f33c156520",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-header[1]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches/standings",
+          "urlHash": "d3debf58f3b5b22b03bf01b3865c1e9318d95f0b",
+          "uuid": "d3debf58-00-5c1e475aeea8f0e0a60e76ccc6fd74f33c156520",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-header[1]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 6,
+      "source": "Columns block",
+      "target": "Columns block (columns6)",
+      "key": "columns6",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/teams",
+          "urlHash": "75f9ad5909cbbc561f596cd6ca36464dcd8cda8a",
+          "uuid": "75f9ad59-07-296cbfe63e14a324ee0bdd34b9ce89e7a344fe41",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-footer[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 7,
+      "source": "Columns block",
+      "target": "Columns block (columns7)",
+      "key": "columns7",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/videos",
+          "urlHash": "022518c96fdfd9af68c20c905f3fb6f7a6b9392f",
+          "uuid": "022518c9-06-ebbd9c7edb786b9d95978d1baead7efaa5adef36",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/home",
+          "urlHash": "0c43f0005237e8466f16bf37ce21bdb86d99608c",
+          "uuid": "0c43f000-09-ebbd9c7edb786b9d95978d1baead7efaa5adef36",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-177-ebbd9c7edb786b9d95978d1baead7efaa5adef36",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/teams",
+          "urlHash": "75f9ad5909cbbc561f596cd6ca36464dcd8cda8a",
+          "uuid": "75f9ad59-06-ebbd9c7edb786b9d95978d1baead7efaa5adef36",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches/stats",
+          "urlHash": "7d255ca59c57d0644c838b8cbc5223b8c6182ace",
+          "uuid": "7d255ca5-08-ebbd9c7edb786b9d95978d1baead7efaa5adef36",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/about",
+          "urlHash": "837df765b2fa39f044d1d9279d22e9e42cd0e22e",
+          "uuid": "837df765-07-ebbd9c7edb786b9d95978d1baead7efaa5adef36",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches/standings",
+          "urlHash": "d3debf58f3b5b22b03bf01b3865c1e9318d95f0b",
+          "uuid": "d3debf58-08-ebbd9c7edb786b9d95978d1baead7efaa5adef36",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/news",
+          "urlHash": "da7693fa891d97b5d2470389f7eb9288c900e343",
+          "uuid": "da7693fa-06-ebbd9c7edb786b9d95978d1baead7efaa5adef36",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[5]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 8,
+      "source": "Cards",
+      "target": "Cards (cards8)",
+      "key": "cards8",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/matches/stats",
+          "urlHash": "7d255ca59c57d0644c838b8cbc5223b8c6182ace",
+          "uuid": "7d255ca5-03-af81b6bc269fd97496f508c5dfc52a1e55b18ace",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 9,
+      "source": "Columns block",
+      "target": "Columns block (columns9)",
+      "key": "columns9",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/news",
+          "urlHash": "da7693fa891d97b5d2470389f7eb9288c900e343",
+          "uuid": "da7693fa-01-50ee222ae60aef2bcd5c2b1430121b3ff130e27a",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-news[1]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 10,
+      "source": "Columns block",
+      "target": "Columns block (columns10)",
+      "key": "columns10",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-25-e99183fdb9c50465ee9d8dd3256d88c26eacb5a8",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[6]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-30-027ed6989399d4303978740646c58750cee8aa32",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[7]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-40-9cdaa8359bc6ead0f59b899ddf5ca4285e57e5d1",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[9]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-45-ccecf6340d90527ed32eaecf52684a86a2a460aa",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[10]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-50-358fae5fef89e74915be98ef484b37ea56554a6a",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[11]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-60-56217a6d2bdc9366ea31c6305dfa317e22260d3a",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[13]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-70-09a0039b3ccf90d4355017fffc2f0f89173774fe",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[15]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-80-8e2d63d726ca0c26c58f1cd309d28444480e79c4",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[17]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-85-98c3f64ad9b9ad7ad63015c3f8f0e9a6462ee3e2",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[18]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-100-9af950ddbe3024b082ed56e711f76ca2b103219e",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[21]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-110-779305168e52dd8b9ca0357f142a7153cb6cf7bf",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[23]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-130-8cb5863d1c8c938ca0bb1afcb063e539ff35392f",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[27]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-135-4fe7e296146ba3b1e4ec31d5fe3be75353fe29d3",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[28]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-140-42899566c75a015bf0f0b891c9fba37907557a65",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[29]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-145-0ecc49b23d3acfadf28a364c6f41c008dea8a97f",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[30]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-160-89fac3f7c00330dad79457bea065cc86042f739c",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[33]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-170-01bbac6c0b6babaa66ed67cdfb1e72e8e8219e88",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[35]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 11,
+      "source": "Hero",
+      "target": "Hero (hero11)",
+      "key": "hero11",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-01-f016284180a883e38644a89a6f7ea6500a787fa0",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/div[1]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches/stats",
+          "urlHash": "7d255ca59c57d0644c838b8cbc5223b8c6182ace",
+          "uuid": "7d255ca5-01-f016284180a883e38644a89a6f7ea6500a787fa0",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/div[1]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches/standings",
+          "urlHash": "d3debf58f3b5b22b03bf01b3865c1e9318d95f0b",
+          "uuid": "d3debf58-01-f016284180a883e38644a89a6f7ea6500a787fa0",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/div[1]",
+          "section": "section-3"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 12,
+      "source": "Columns block",
+      "target": "Columns block (columns12)",
+      "key": "columns12",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/news",
+          "urlHash": "da7693fa891d97b5d2470389f7eb9288c900e343",
+          "uuid": "da7693fa-07-296cbfe63e14a324ee0bdd34b9ce89e7a344fe41",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-footer[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 13,
+      "source": "Cards",
+      "target": "Cards (cards13)",
+      "key": "cards13",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/teams",
+          "urlHash": "75f9ad5909cbbc561f596cd6ca36464dcd8cda8a",
+          "uuid": "75f9ad59-01-59e15425f549c8a903a2c2b63d28e9041376cead",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-teams-landing[1]"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 14,
+      "source": "Hero",
+      "target": "Hero (hero14)",
+      "key": "hero14",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/about",
+          "urlHash": "837df765b2fa39f044d1d9279d22e9e42cd0e22e",
+          "uuid": "837df765-01-a2f05f4359bb238ea5e464900967b6e10460bb23",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-aboutus[1]/div[1]",
+          "section": "section-3"
+        }
+      ]
+    },
+    {
+      "name": "header",
+      "cluster": 15,
+      "source": "Header",
+      "target": "Header (header15)",
+      "key": "header15",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/videos",
+          "urlHash": "022518c96fdfd9af68c20c905f3fb6f7a6b9392f",
+          "uuid": "022518c9-00-5c1e475aeea8f0e0a60e76ccc6fd74f33c156520",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-header[1]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 16,
+      "source": "Columns block",
+      "target": "Columns block (columns16)",
+      "key": "columns16",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-03-aa93656e1f60eb58fdd02ee8594d334b4187b95d",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 17,
+      "source": "Columns",
+      "target": "Columns (columns17)",
+      "key": "columns17",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+          "uuid": "28795fcf-21-9cce493568c86a4a63169f7e4d064abc530b691a",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[5]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 18,
+      "source": "Cards",
+      "target": "Cards (cards18)",
+      "key": "cards18",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/home",
+          "urlHash": "0c43f0005237e8466f16bf37ce21bdb86d99608c",
+          "uuid": "0c43f000-03-415db372fa23c84d8c41622bb00fec2fc73df84c",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-home[1]/main[1]/div[1]/app-latest-videos[1]/div[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "header",
+      "cluster": 19,
+      "source": "Header",
+      "target": "Header (header19)",
+      "key": "header19",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/home",
+          "urlHash": "0c43f0005237e8466f16bf37ce21bdb86d99608c",
+          "uuid": "0c43f000-00-5c1e475aeea8f0e0a60e76ccc6fd74f33c156520",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-header[1]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 20,
+      "source": "Columns block",
+      "target": "Columns block (columns20)",
+      "key": "columns20",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/videos",
+          "urlHash": "022518c96fdfd9af68c20c905f3fb6f7a6b9392f",
+          "uuid": "022518c9-01-f7ee7714936c880a1f3c4bde28ffc4e349b65ea3",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-videos[1]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 21,
+      "source": "Columns block",
+      "target": "Columns block (columns21)",
+      "key": "columns21",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/about",
+          "urlHash": "837df765b2fa39f044d1d9279d22e9e42cd0e22e",
+          "uuid": "837df765-08-296cbfe63e14a324ee0bdd34b9ce89e7a344fe41",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-footer[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 22,
+      "source": "Columns block",
+      "target": "Columns block (columns22)",
+      "key": "columns22",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/home",
+          "urlHash": "0c43f0005237e8466f16bf37ce21bdb86d99608c",
+          "uuid": "0c43f000-10-296cbfe63e14a324ee0bdd34b9ce89e7a344fe41",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-footer[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "header",
+      "cluster": 23,
+      "source": "Header",
+      "target": "Header (header23)",
+      "key": "header23",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/teams",
+          "urlHash": "75f9ad5909cbbc561f596cd6ca36464dcd8cda8a",
+          "uuid": "75f9ad59-00-5c1e475aeea8f0e0a60e76ccc6fd74f33c156520",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-header[1]"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 24,
+      "source": "Hero",
+      "target": "Hero (hero24)",
+      "key": "hero24",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/home",
+          "urlHash": "0c43f0005237e8466f16bf37ce21bdb86d99608c",
+          "uuid": "0c43f000-04-168d4ec7a133fbab0c45e47b340c516914c1e09d",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-home[1]/main[1]/div[1]/app-subscribe[1]",
+          "section": "section-2"
+        }
+      ]
+    },
+    {
+      "name": "header",
+      "cluster": 25,
+      "source": "Header",
+      "target": "Header (header25)",
+      "key": "header25",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/news",
+          "urlHash": "da7693fa891d97b5d2470389f7eb9288c900e343",
+          "uuid": "da7693fa-00-5c1e475aeea8f0e0a60e76ccc6fd74f33c156520",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-header[1]"
+        }
+      ]
+    },
+    {
+      "name": "header",
+      "cluster": 26,
+      "source": "Header",
+      "target": "Header (header26)",
+      "key": "header26",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/about",
+          "urlHash": "837df765b2fa39f044d1d9279d22e9e42cd0e22e",
+          "uuid": "837df765-00-5c1e475aeea8f0e0a60e76ccc6fd74f33c156520",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-header[1]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 27,
+      "source": "Columns block",
+      "target": "Columns block (columns27)",
+      "key": "columns27",
+      "instances": [
+        {
+          "url": "https://www.majorleaguecricket.com/home",
+          "urlHash": "0c43f0005237e8466f16bf37ce21bdb86d99608c",
+          "uuid": "0c43f000-01-0bba318d64ac1a61cac89c2c46d1eae42714a9a6",
+          "xpath": "/html[1]/body[1]/app-root[1]/app-home[1]/main[1]/div[1]/app-latest-news[1]"
+        }
+      ]
+    }
+  ],
+  "outliers": [
+    {
+      "url": "https://www.majorleaguecricket.com/videos",
+      "urlHash": "022518c96fdfd9af68c20c905f3fb6f7a6b9392f",
+      "uuid": "022518c9-02-c04aa0bc5359a263291cf87642937e04ecdf0111",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/videos",
+      "urlHash": "022518c96fdfd9af68c20c905f3fb6f7a6b9392f",
+      "uuid": "022518c9-03-84c8aa1867fef13854656340f17ca620842e8737",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/videos",
+      "urlHash": "022518c96fdfd9af68c20c905f3fb6f7a6b9392f",
+      "uuid": "022518c9-04-b862265a268cb0fe71063af7ace507c0ec6ee014",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[3]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/videos",
+      "urlHash": "022518c96fdfd9af68c20c905f3fb6f7a6b9392f",
+      "uuid": "022518c9-05-d2bf0eb835d15b7005b292dd2925586e03fb141c",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[4]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/home",
+      "urlHash": "0c43f0005237e8466f16bf37ce21bdb86d99608c",
+      "uuid": "0c43f000-02-3b897e88b2ccdc7f973026a1755f67347ee99fa0",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-home[1]/main[1]/div[1]/app-latest-videos[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/home",
+      "urlHash": "0c43f0005237e8466f16bf37ce21bdb86d99608c",
+      "uuid": "0c43f000-05-c04aa0bc5359a263291cf87642937e04ecdf0111",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/home",
+      "urlHash": "0c43f0005237e8466f16bf37ce21bdb86d99608c",
+      "uuid": "0c43f000-06-84c8aa1867fef13854656340f17ca620842e8737",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/home",
+      "urlHash": "0c43f0005237e8466f16bf37ce21bdb86d99608c",
+      "uuid": "0c43f000-07-b862265a268cb0fe71063af7ace507c0ec6ee014",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[3]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/home",
+      "urlHash": "0c43f0005237e8466f16bf37ce21bdb86d99608c",
+      "uuid": "0c43f000-08-d2bf0eb835d15b7005b292dd2925586e03fb141c",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[4]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-02-fa9f42a7a74c3a085aed6d7aed611098c9c8bac5",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/div[2]",
+      "section": "section-4"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-05-9577c5c949f211985934575da995c3c114a67e2d",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-07-7e03edc0156dfc5b435feb4c17688fefbaf57126",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-08-8bd08d7e0f00c983aaa60daa39837190540df024",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[2]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-10-7031d32f4da6f52b8804d0ba4679ca48a3636010",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-12-0f3cd976ba5a088592fadf3e774b680944e76d8a",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-13-18584cce233a3c0d38bbe370b6edf48b22ddb59b",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[3]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-15-90ffaad50b621ba52de1dfa64d11191218f32aa5",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-17-43b93236f6736f3e5a81d098593f0cca36c3899a",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-18-b9e7641a25fd1a491f49f2361e196b8b2c691fdc",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[4]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-20-4dab091b6ba2ffb6ce97fe06b9babc72f55d5a77",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[5]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-22-9d452ac03e506b1b507e5ede7dde022901abb8ff",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[5]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-24-0cf40cd28977774a13393befc71a43361f425d3c",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[6]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-26-eabb6399a93a5a54c616a0777f1fb12f93eaef3e",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[6]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-27-f826cf595c9b8d9531d3c90a961eebcaf8a99124",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[6]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-29-e3be19ca3d9483ba4a3e65ee8868aa7d326757b5",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[7]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-31-46a0c7ec7d805c8a1b0e02303daf96d0591c05b1",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[7]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-32-446acfa8550d99e0d3fcd9629eb01cea07ef89fc",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[7]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-34-f5f67663f075473bcd257d3d68c8055a1af785c1",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[8]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-36-f0d07b9e618ca7e3184f5585651463e90f46d7fc",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[8]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-37-bb4386e8d8c572cce440f74c62dac0cff73af612",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[8]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-39-a148f81faba39ac95ba31e862cbb50d0393ccc66",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[9]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-41-d9041c549517320c6532412a1808b34d679b268e",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[9]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-42-32b90352da0f16f25ed3aba61d26a6a9dc865da9",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[9]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-44-496ab996b0dad445561f25e2f74b6c93edf212c6",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[10]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-46-4ce4d2406d1933363b940178136a0c32b978303d",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[10]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-47-558347221033c0d7a98959309536aa0b656f94a4",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[10]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-49-5a789c1550ee20b133b0a184991b0fcf1a696e40",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[11]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-51-2dd187d2aef8633ce3c0c0eebc9d50ba5066f8c7",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[11]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-52-7babe122141e77cf856f5dc00bde305aa0a8bf75",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[11]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-54-06c574157b73a742bdccd06da515ab7083c83f68",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[12]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-56-06c1851e5f9a8430e5fdc38a195cfa221b6243c3",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[12]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-57-51c27ab374ea2deaac9a385278ef1e02a94cd407",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[12]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-59-6f6b2cdd26f5a6e4c0985e60ed3eb8a9ae5b58e6",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[13]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-61-cb95818610a29599e11cbc0a2120e361036e6aee",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[13]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-62-90f50c985e9e9fe0c6647705e26db31f162ff34a",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[13]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-64-7393f2b31627327ddc343909e9fd0600a7f3d658",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[14]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-66-0a8361da810fa8646ac2d0042a19bd151113e88c",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[14]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-67-36f20c6c6ad593020027530bc5e473f95b5954e6",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[14]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-69-25912a893389c612655c4ca336f777ea9fa85993",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[15]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-71-870f0c91c7059945b1a1023287c8a0bd2a554221",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[15]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-72-d3a842389f6f1251dac1c296437defe7f1664aab",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[15]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-74-e4361aac1062220b6b6e2a70bed2e64a55de3482",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[16]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-76-877f00e36f61eac7ac8e1559845060736a458db8",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[16]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-77-037aa347153832343559c7f40c9293f43df041bc",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[16]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-79-980f768162e25371c001298f23f239b0a75dc28c",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[17]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-81-da2c1becd4bd8cd931aadd7d1c28996fe72536da",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[17]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-82-724d016b5dae51696a0be14a669aaa07f6490295",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[17]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-84-e0da64ebdd2de41ad038560a9b7dde0b6585f2c0",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[18]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-86-cec9ada724c93944a0ed9f10a7c5f6d0f48971da",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[18]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-87-4e41f69321a512358a4cf97ef9e751d9e8eeb996",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[18]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-89-387f94c88a789dcd5981ff71b21840e7e892ff52",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[19]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-91-ef2de812b2bed8b3069fdfe2c91d3d1655fb015a",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[19]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-92-a47b529a458ad98ece9cd3a79203507ba907092f",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[19]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-94-f56f5fa9daa970e6a972155c450e93acb60bfa48",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[20]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-96-f9b3c96aa81e55ec24f91ba09c8f8a22b3ab6794",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[20]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-97-c4664acdadb32141c21dfc1ed16b80adf41d35d5",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[20]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-99-5427569c09ec1190c2dc7587b8880a6e4d47b9ad",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[21]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-101-bd2191ac2d765ac5096dbc051ceec86257b8e7aa",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[21]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-102-31a01e7bc7713099c7f3dec17a78a852842a3e5f",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[21]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-104-8507a4c20e83e01e9362426681f18501170c3306",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[22]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-106-aee3b5911f81ef134742310c430c1f6edee02188",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[22]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-107-fe9248d1af5b3e5474d9802c9f90bf17e0c406b8",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[22]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-109-8ea09c3ea2a34d08ffb8735853066c06d1930f8b",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[23]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-111-2b7aa56c3c3445f2456c93e58adfebd57b636b24",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[23]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-112-2f7c35ad370bcaa84ec72a2def681754eec26e7d",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[23]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-114-45387d553355265bc7ade3a3a6d54b2444d9f676",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[24]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-116-5d04645a648fc0da99e1f4086d6a02f86ec7162b",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[24]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-117-35cf1194977d4eae19fbe401939da039915a9d94",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[24]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-119-a15235471daff2eca1980ddb307171f5884de861",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[25]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-121-25714bc6bbf303ae8811bb41a35fbc4929ae171e",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[25]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-122-f7fd427a62150827277cf4477755427b02e65f87",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[25]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-124-415f168a57a7f37e801df2747fa2eb6e802b9fe8",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[26]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-126-d46f81cab0f6e47a6b6e07225340375540e820e0",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[26]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-127-6af6c3de1abc86087a90f8fbf52948acf786c327",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[26]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-129-e8ad17119958ab16256a02de9ee8b363c691b98a",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[27]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-131-0bc95bfe14d60190e3546d6c8883af58988379fe",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[27]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-132-b4b21c39c31a6c391051c79b8824045fb94de9ab",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[27]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-134-9da1ba5955ab36fe88b57dec4671508c4a77d677",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[28]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-136-1d1547e43f5d428c24ea03c78a3ef6c205b9b85c",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[28]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-137-05e4d93b69cbec7f429580a98e448b276d83ea56",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[28]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-139-fe9c1ff1f0e9f6a6c7b3c9e6ccf991b4bd49cf01",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[29]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-141-ee6316e45f25e567ae5d1be78debe6e86bbef4c7",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[29]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-142-29846e3b61129074300714c34a52bb1dcbb8872a",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[29]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-144-94b98a3dd44584fc2dccff8583e7e6ca59593bef",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[30]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-146-9a23ee78db398da19b39de46b04345f3a85b6447",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[30]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-147-2a0d64a2d1025550561f29d404bfb94ff51357e1",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[30]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-149-6094ce9d884503b20e70bab895fd81a97674f119",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[31]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-151-1a7f758d88356ead06238ecddcb239241440a586",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[31]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-152-2cff77e62099407c93798e2e73e425340d37a488",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[31]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-154-b9a79c051451f51e88ce71e27d454ed15c94f63d",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[32]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-156-0344218cc6cde8758816f03f700bb3712e5d4bd2",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[32]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-157-56dc4808674ae0db6911eee3ca0e7084e9c4315f",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[32]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-159-c6dabf9bb4e0cdd71ffb039dbc1e247f7210e700",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[33]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-161-c24b8c1f05fef0cd5eb8f5feded8a1fc4f950e9a",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[33]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-162-7a107076535dc26ea96082bbefb210a40f69ca02",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[33]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-164-c1e48c245b5a68c1b5e78cf6dd656b4643f35bd3",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[34]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-166-122c07db7caa7d6008b785c4d0a1c6a1636426e6",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[34]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-167-ad51537f19afc7b52a4e66c519deed74b63ef42e",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[34]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-169-cf1105c33fd95a0e14ccd983a1ad819ae629a13b",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[35]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-171-6b92c3877c26bd20fd58f9f1e390523c17eee914",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[35]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-172-7e8ea42040d615e82a518b330a5582a90dc62c71",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]/div[1]/div[1]/app-results-mc[1]/div[1]/div[35]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-173-c04aa0bc5359a263291cf87642937e04ecdf0111",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-174-84c8aa1867fef13854656340f17ca620842e8737",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-175-b862265a268cb0fe71063af7ace507c0ec6ee014",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[3]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "urlHash": "28795fcfc8a29876c315ded7af92c77aa26cf2ed",
+      "uuid": "28795fcf-176-d2bf0eb835d15b7005b292dd2925586e03fb141c",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[4]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/teams",
+      "urlHash": "75f9ad5909cbbc561f596cd6ca36464dcd8cda8a",
+      "uuid": "75f9ad59-02-c04aa0bc5359a263291cf87642937e04ecdf0111",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/teams",
+      "urlHash": "75f9ad5909cbbc561f596cd6ca36464dcd8cda8a",
+      "uuid": "75f9ad59-03-84c8aa1867fef13854656340f17ca620842e8737",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/teams",
+      "urlHash": "75f9ad5909cbbc561f596cd6ca36464dcd8cda8a",
+      "uuid": "75f9ad59-04-b862265a268cb0fe71063af7ace507c0ec6ee014",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[3]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/teams",
+      "urlHash": "75f9ad5909cbbc561f596cd6ca36464dcd8cda8a",
+      "uuid": "75f9ad59-05-d2bf0eb835d15b7005b292dd2925586e03fb141c",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[4]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches/stats",
+      "urlHash": "7d255ca59c57d0644c838b8cbc5223b8c6182ace",
+      "uuid": "7d255ca5-02-fa9f42a7a74c3a085aed6d7aed611098c9c8bac5",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/div[2]",
+      "section": "section-4"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches/stats",
+      "urlHash": "7d255ca59c57d0644c838b8cbc5223b8c6182ace",
+      "uuid": "7d255ca5-04-c04aa0bc5359a263291cf87642937e04ecdf0111",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches/stats",
+      "urlHash": "7d255ca59c57d0644c838b8cbc5223b8c6182ace",
+      "uuid": "7d255ca5-05-84c8aa1867fef13854656340f17ca620842e8737",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches/stats",
+      "urlHash": "7d255ca59c57d0644c838b8cbc5223b8c6182ace",
+      "uuid": "7d255ca5-06-b862265a268cb0fe71063af7ace507c0ec6ee014",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[3]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches/stats",
+      "urlHash": "7d255ca59c57d0644c838b8cbc5223b8c6182ace",
+      "uuid": "7d255ca5-07-d2bf0eb835d15b7005b292dd2925586e03fb141c",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[4]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/about",
+      "urlHash": "837df765b2fa39f044d1d9279d22e9e42cd0e22e",
+      "uuid": "837df765-02-50ca9852ff1c2cfec77304b436141bdb23fb7848",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-aboutus[1]/div[2]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/about",
+      "urlHash": "837df765b2fa39f044d1d9279d22e9e42cd0e22e",
+      "uuid": "837df765-03-c04aa0bc5359a263291cf87642937e04ecdf0111",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/about",
+      "urlHash": "837df765b2fa39f044d1d9279d22e9e42cd0e22e",
+      "uuid": "837df765-04-84c8aa1867fef13854656340f17ca620842e8737",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/about",
+      "urlHash": "837df765b2fa39f044d1d9279d22e9e42cd0e22e",
+      "uuid": "837df765-05-b862265a268cb0fe71063af7ace507c0ec6ee014",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[3]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/about",
+      "urlHash": "837df765b2fa39f044d1d9279d22e9e42cd0e22e",
+      "uuid": "837df765-06-d2bf0eb835d15b7005b292dd2925586e03fb141c",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[4]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches/standings",
+      "urlHash": "d3debf58f3b5b22b03bf01b3865c1e9318d95f0b",
+      "uuid": "d3debf58-02-fa9f42a7a74c3a085aed6d7aed611098c9c8bac5",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/div[2]",
+      "section": "section-4"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches/standings",
+      "urlHash": "d3debf58f3b5b22b03bf01b3865c1e9318d95f0b",
+      "uuid": "d3debf58-03-af81b6bc269fd97496f508c5dfc52a1e55b18ace",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-match-center[1]/main[1]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches/standings",
+      "urlHash": "d3debf58f3b5b22b03bf01b3865c1e9318d95f0b",
+      "uuid": "d3debf58-04-c04aa0bc5359a263291cf87642937e04ecdf0111",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches/standings",
+      "urlHash": "d3debf58f3b5b22b03bf01b3865c1e9318d95f0b",
+      "uuid": "d3debf58-05-84c8aa1867fef13854656340f17ca620842e8737",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches/standings",
+      "urlHash": "d3debf58f3b5b22b03bf01b3865c1e9318d95f0b",
+      "uuid": "d3debf58-06-b862265a268cb0fe71063af7ace507c0ec6ee014",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[3]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches/standings",
+      "urlHash": "d3debf58f3b5b22b03bf01b3865c1e9318d95f0b",
+      "uuid": "d3debf58-07-d2bf0eb835d15b7005b292dd2925586e03fb141c",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[4]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/news",
+      "urlHash": "da7693fa891d97b5d2470389f7eb9288c900e343",
+      "uuid": "da7693fa-02-c04aa0bc5359a263291cf87642937e04ecdf0111",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/news",
+      "urlHash": "da7693fa891d97b5d2470389f7eb9288c900e343",
+      "uuid": "da7693fa-03-84c8aa1867fef13854656340f17ca620842e8737",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/news",
+      "urlHash": "da7693fa891d97b5d2470389f7eb9288c900e343",
+      "uuid": "da7693fa-04-b862265a268cb0fe71063af7ace507c0ec6ee014",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[3]"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/news",
+      "urlHash": "da7693fa891d97b5d2470389f7eb9288c900e343",
+      "uuid": "da7693fa-05-d2bf0eb835d15b7005b292dd2925586e03fb141c",
+      "xpath": "/html[1]/body[1]/app-root[1]/app-sponsors[1]/div[1]/div[1]/div[4]"
+    }
+  ],
+  "sections": [
+    {
+      "name": "section-1",
+      "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 177
+    },
+    {
+      "name": "section-2",
+      "background": "rgb(255, 255, 255) url(\"https://www.majorleaguecricket.com/subscribe.c4613ba2b72dbf72.png\") no-repeat scroll 50% 50% / cover padding-box border-box",
+      "count": 1
+    },
+    {
+      "name": "section-3",
+      "background": "rgb(255, 255, 255) url(\"https://www.majorleaguecricket.com/matchcenter_banner.682bb77aae9d9906.webp\") no-repeat scroll 50% 50% / cover padding-box border-box",
+      "count": 4
+    },
+    {
+      "name": "section-4",
+      "background": "rgb(13, 25, 114) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 3
+    }
+  ]
+}

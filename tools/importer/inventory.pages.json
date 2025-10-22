@@ -1,0 +1,54 @@
+{
+  "templates": [
+    {
+      "name": "'content hub'",
+      "cluster": 1,
+      "pages": [
+        {
+          "url": "https://www.majorleaguecricket.com/home",
+          "uuid": "0c43f0005237e8466f16bf37ce21bdb86d99608c"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/teams",
+          "uuid": "75f9ad5909cbbc561f596cd6ca36464dcd8cda8a"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/about",
+          "uuid": "837df765b2fa39f044d1d9279d22e9e42cd0e22e"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/videos",
+          "uuid": "022518c96fdfd9af68c20c905f3fb6f7a6b9392f"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/news",
+          "uuid": "da7693fa891d97b5d2470389f7eb9288c900e343"
+        }
+      ]
+    },
+    {
+      "name": "'Directory Listing'",
+      "cluster": 2,
+      "pages": [
+        {
+          "url": "https://www.majorleaguecricket.com/matches",
+          "uuid": "28795fcfc8a29876c315ded7af92c77aa26cf2ed"
+        }
+      ]
+    },
+    {
+      "name": "'Dashboard Template'",
+      "cluster": 3,
+      "pages": [
+        {
+          "url": "https://www.majorleaguecricket.com/matches/stats",
+          "uuid": "7d255ca59c57d0644c838b8cbc5223b8c6182ace"
+        },
+        {
+          "url": "https://www.majorleaguecricket.com/matches/standings",
+          "uuid": "d3debf58f3b5b22b03bf01b3865c1e9318d95f0b"
+        }
+      ]
+    }
+  ]
+}
