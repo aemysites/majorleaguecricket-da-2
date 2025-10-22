@@ -1,0 +1,69 @@
+{
+  "originUrl": "https://www.majorleaguecricket.com",
+  "aborted": false,
+  "urls": [
+    {
+      "url": "https://www.majorleaguecricket.com/about",
+      "source": "MANUAL",
+      "targetPath": "/about",
+      "id": "837df765b2fa39f044d1d9279d22e9e42cd0e22e"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/home",
+      "source": "MANUAL",
+      "targetPath": "/home",
+      "id": "0c43f0005237e8466f16bf37ce21bdb86d99608c"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches",
+      "source": "MANUAL",
+      "targetPath": "/matches",
+      "id": "28795fcfc8a29876c315ded7af92c77aa26cf2ed"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches/standings",
+      "source": "MANUAL",
+      "targetPath": "/matches/standings",
+      "id": "d3debf58f3b5b22b03bf01b3865c1e9318d95f0b"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/matches/stats",
+      "source": "MANUAL",
+      "targetPath": "/matches/stats",
+      "id": "7d255ca59c57d0644c838b8cbc5223b8c6182ace"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/news",
+      "source": "MANUAL",
+      "targetPath": "/news",
+      "id": "da7693fa891d97b5d2470389f7eb9288c900e343"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/teams",
+      "source": "MANUAL",
+      "targetPath": "/teams",
+      "id": "75f9ad5909cbbc561f596cd6ca36464dcd8cda8a"
+    },
+    {
+      "url": "https://www.majorleaguecricket.com/videos",
+      "source": "MANUAL",
+      "targetPath": "/videos",
+      "id": "022518c96fdfd9af68c20c905f3fb6f7a6b9392f"
+    }
+  ],
+  "lastCrawled": "MANUAL",
+  "crawlOptions": {
+    "timeout": 10000,
+    "inclusionPatterns": [],
+    "exclusionPatterns": [],
+    "limit": 100,
+    "sameDomain": true,
+    "keepHash": false,
+    "strategy": "manual",
+    "strategiesAttempted": [
+      "MANUAL"
+    ]
+  },
+  "extractionErrors": [],
+  "errorCountMessage": "none"
+}
