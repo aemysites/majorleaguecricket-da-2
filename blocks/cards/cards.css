@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .cards > ul {
   list-style: none;
   margin: 0;
@@ -24,4 +25,139 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+
+.cards.cards18 {
+  /* Ensure no default margins/padding interfere */
+  margin: 0;
+  padding: 0;
+  background: var(--background-color);
+}
+
+/* Grid layout for horizontal row of cards, tight and responsive */
+.cards.cards18 ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  grid-auto-rows: auto;
+  align-items: stretch;
+}
+
+/* Card container: white, rounded, shadow, compact */
+.cards.cards18 li {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgb(44 62 80 / 13%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  margin: 0;
+  transition: box-shadow .18s;
+
+  /* Remove any height constraints to allow content to dictate height */
+}
+
+/* Image block: image flush to card top and sides, no extra spacing */
+.cards.cards18 .cards-card-image {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Thumbnail image: fill card width, flush to top/left/right, rounded top corners */
+.cards.cards18 .cards-card-image picture img {
+  display: block;
+  width: 100%;
+  min-height: 120px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 14px 14px 0 0;
+  background: #eaeaea;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* Overlay play button: bottom left of image (ensure overlay exists in HTML) */
+.cards.cards18 .cards-card-image picture + picture {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 14%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  padding: 0;
+}
+
+.cards.cards18 .cards-card-image picture + picture img,
+.cards.cards18 .cards-card-image picture + picture svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* Card body: compact, tight to image, grouped */
+.cards.cards18 .cards-card-body {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0;
+}
+
+/* Date styling: subtle, compact */
+.cards.cards18 .cards-card-body p {
+  margin: 0;
+}
+
+.cards.cards18 .cards-card-body p:first-child {
+  font-size: 13px;
+  color: #7a7a7a;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  margin-bottom: 3px;
+}
+
+/* Title styling: bold, tight grouping */
+.cards.cards18 .cards-card-body p:last-child strong {
+  font-size: 16px;
+  color: #222;
+  font-weight: bold;
+  line-height: 1.22;
+  display: block;
+  margin: 0;
+}
+
+/* Responsive stacking for narrow screens */
+@media (width <= 800px) {
+  .cards.cards18 ul {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .cards.cards18 .cards-card-body {
+    padding: 12px 10px 14px;
+  }
+}
+
+/* Make sure images scale gracefully */
+.cards.cards18 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
