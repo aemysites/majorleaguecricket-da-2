@@ -119,10 +119,10 @@
   ],
   "blocks": [
     {
-      "name": "Columns-block",
+      "name": "Columns",
       "cluster": 1,
-      "source": "Columns-block",
-      "target": "Columns-block (columns1)",
+      "source": "Columns block",
+      "target": "Columns block (columns1)",
       "key": "columns1",
       "instances": [
         {
@@ -368,8 +368,8 @@
     {
       "name": "Columns",
       "cluster": 2,
-      "source": "Columns-block",
-      "target": "Columns-block (columns2)",
+      "source": "Columns block",
+      "target": "Columns block (columns2)",
       "key": "columns2",
       "instances": [
         {
@@ -519,8 +519,8 @@
     {
       "name": "Columns",
       "cluster": 4,
-      "source": "Columns-block",
-      "target": "Columns-block (columns4)",
+      "source": "Columns block",
+      "target": "Columns block (columns4)",
       "key": "columns4",
       "instances": [
         {
@@ -562,8 +562,8 @@
     {
       "name": "Columns",
       "cluster": 6,
-      "source": "Columns-block",
-      "target": "Columns-block (columns6)",
+      "source": "Columns block",
+      "target": "Columns block (columns6)",
       "key": "columns6",
       "instances": [
         {
@@ -578,8 +578,8 @@
     {
       "name": "Columns",
       "cluster": 7,
-      "source": "Columns-block",
-      "target": "Columns-block (columns7)",
+      "source": "Columns block",
+      "target": "Columns block (columns7)",
       "key": "columns7",
       "instances": [
         {
@@ -650,8 +650,8 @@
     {
       "name": "Columns",
       "cluster": 9,
-      "source": "Columns-block",
-      "target": "Columns-block (columns9)",
+      "source": "Columns block",
+      "target": "Columns block (columns9)",
       "key": "columns9",
       "instances": [
         {
@@ -665,8 +665,8 @@
     {
       "name": "Columns",
       "cluster": 10,
-      "source": "Columns-block",
-      "target": "Columns-block (columns10)",
+      "source": "Columns block",
+      "target": "Columns block (columns10)",
       "key": "columns10",
       "instances": [
         {
@@ -823,8 +823,8 @@
     {
       "name": "Columns",
       "cluster": 12,
-      "source": "Columns-block",
-      "target": "Columns-block (columns12)",
+      "source": "Columns block",
+      "target": "Columns block (columns12)",
       "key": "columns12",
       "instances": [
         {
@@ -885,8 +885,8 @@
     {
       "name": "Columns",
       "cluster": 16,
-      "source": "Columns-block",
-      "target": "Columns-block (columns16)",
+      "source": "Columns block",
+      "target": "Columns block (columns16)",
       "key": "columns16",
       "instances": [
         {
@@ -946,8 +946,8 @@
     {
       "name": "Columns",
       "cluster": 20,
-      "source": "Columns-block",
-      "target": "Columns-block (columns20)",
+      "source": "Columns block",
+      "target": "Columns block (columns20)",
       "key": "columns20",
       "instances": [
         {
@@ -961,8 +961,8 @@
     {
       "name": "Columns",
       "cluster": 21,
-      "source": "Columns-block",
-      "target": "Columns-block (columns21)",
+      "source": "Columns block",
+      "target": "Columns block (columns21)",
       "key": "columns21",
       "instances": [
         {
@@ -977,8 +977,8 @@
     {
       "name": "Columns",
       "cluster": 22,
-      "source": "Columns-block",
-      "target": "Columns-block (columns22)",
+      "source": "Columns block",
+      "target": "Columns block (columns22)",
       "key": "columns22",
       "instances": [
         {
@@ -1054,8 +1054,8 @@
     {
       "name": "Columns",
       "cluster": 27,
-      "source": "Columns-block",
-      "target": "Columns-block (columns27)",
+      "source": "Columns block",
+      "target": "Columns block (columns27)",
       "key": "columns27",
       "instances": [
         {
