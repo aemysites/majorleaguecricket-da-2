@@ -119,7 +119,7 @@
   ],
   "blocks": [
     {
-      "name": "Columns",
+      "name": "Columns-block",
       "cluster": 1,
       "source": "Columns-block",
       "target": "Columns-block (columns1)",
