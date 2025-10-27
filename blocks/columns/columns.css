@@ -104,7 +104,6 @@
   }
 }
 
-/* Style for left team info */
 .columns.columns17.block.columns-3-cols > div > div:first-child {
   display: flex;
   flex-direction: column;
@@ -113,7 +112,6 @@
   gap: 2px;
 }
 
-/* Style for right team info */
 .columns.columns17.block.columns-3-cols > div > div:last-child {
   display: flex;
   flex-direction: column;
@@ -122,7 +120,6 @@
   gap: 2px;
 }
 
-/* Style for the "Vs" divider */
 .columns.columns17.block.columns-3-cols > div > div:nth-child(2) {
   font-weight: bold;
   font-size: 14px;
@@ -130,14 +127,12 @@
   margin: 0 16px;
 }
 
-/* Optional: Team names, short codes, and logos */
 .columns.columns17.block.columns-3-cols > div > div > p {
   margin: 0;
   line-height: 1.2;
   font-family: Arial, sans-serif;
 }
 
-/* Team name */
 .columns.columns17.block.columns-3-cols > div > div > p:first-child,
 .columns.columns17.block.columns-3-cols > div > div > p:last-child {
   text-transform: uppercase;
@@ -146,18 +141,41 @@
   color: #000;
 }
 
-/* Team short code */
 .columns.columns17.block.columns-3-cols > div > div > p:nth-child(2) {
   font-weight: bold;
-  color: #E32614;    /* Red for emphasis */
+  color: #E32614;
   font-size: 12px;
 }
 
-/* Team logo: shrink left logo and right logo to same size */
 .columns.columns17.block.columns-3-cols > div > div > p picture img {
   width: 32px;
   height: 32px;
   object-fit: contain;
   display: block;
   margin: 4px auto;
+}
+
+
+.columns div {
+  display: flex;
+  gap: 12px; /* tighter gap */
+  justify-content: flex-start;
+}
+
+.columns div div {
+  background: #F4F4F4;
+  border-radius: 8px;
+  padding: 10px 16px; /* tighter vertical padding */
+  min-width: 0; /* allow to shrink to fit content */
+  flex: 0 0 auto; /* do NOT stretch or shrink */
+  align-items: flex-start;
+}
+
+/* Style the text as bold blue (since label/value split isn't possible) */
+.columns div div p {
+  margin: 0;
+  color: #3C3C78;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: left;
 }
