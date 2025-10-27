@@ -158,24 +158,62 @@
 
 .columns div {
   display: flex;
-  gap: 12px; /* tighter gap */
+  gap: 12px;
   justify-content: flex-start;
 }
 
 .columns div div {
   background: #F4F4F4;
   border-radius: 8px;
-  padding: 10px 16px; /* tighter vertical padding */
-  min-width: 0; /* allow to shrink to fit content */
-  flex: 0 0 auto; /* do NOT stretch or shrink */
+  padding: 10px 16px;
+  min-width: 0;
+  flex: 0 0 auto;
   align-items: flex-start;
 }
 
-/* Style the text as bold blue (since label/value split isn't possible) */
 .columns div div p {
   margin: 0;
   color: #3C3C78;
   font-size: 13px;
   font-weight: bold;
   text-align: left;
+}
+
+
+.columns-wrapper .columns-3-cols > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff; /* ensure white background */
+  padding: 16px 24px; /* optional for spacing */
+  gap: 2vw;
+}
+
+.columns-wrapper .columns-3-cols > div > div {
+  flex: 1;
+}
+
+.columns-wrapper .columns-3-cols > div > div:nth-child(1) p {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  margin: 0;
+  text-align: left;
+}
+
+.columns-wrapper .columns-3-cols > div > div:nth-child(2) p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+  margin: 0;
+  text-align: center;
+}
+
+.columns-wrapper .columns-3-cols > div > div:nth-child(3) p {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+  text-align: right;
 }
