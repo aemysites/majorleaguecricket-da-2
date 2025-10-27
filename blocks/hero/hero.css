@@ -67,7 +67,6 @@
 }
 
 .hero.hero24 div:first-child {
-  /* Image area (right side) */
   grid-column: 2;
   padding: 0;
   justify-content: flex-end;
@@ -85,13 +84,10 @@
   max-width: none;
   max-height: 420px;
   filter: grayscale(0.7) contrast(1.2);
-
-  /* Pinkish-red duotone overlay using box-shadow for blend */
   box-shadow: 0 0 0 100vw rgb(228 49 81 / 40%) inset;
 }
 
 .hero.hero24 div:last-child {
-  /* Text/button area (left side) */
   grid-column: 1;
   justify-content: center;
   align-items: flex-start;
@@ -163,5 +159,111 @@
     margin-top: 20px;
     padding: 10px 18px;
     font-size: 1em;
+  }
+}
+
+/* HERO BLOCK: vertical stripes with bottom gradient fade, flex row layout */
+.hero.hero14 {
+  width: 100vw;
+  min-height: 340px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: stretch;
+  background:
+    repeating-linear-gradient(
+      to right,
+      #1a0842 0, #1a0842 48px,
+      #ff2059 48px, #ff2059 96px
+    ),
+    linear-gradient(to bottom, transparent 65%, #1a0842 100%);
+  background-blend-mode: normal;
+  overflow: hidden;
+}
+
+/* Ensure both main columns fill height and align items to start */
+.hero.hero14 .block,
+.hero.hero14 .no-image {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  min-width: 0;
+  min-height: 340px;
+  position: relative;
+}
+
+/* Columns: align all content to top and left, fill height */
+.hero.hero14 .block div,
+.hero.hero14 .no-image div {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 0;
+  height: 100%;
+  position: relative;
+}
+
+/* Headline container: push headline into top third for balance */
+.hero.hero14 .block div div,
+.hero.hero14 .no-image div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  padding-top: 8vh; /* Top padding for vertical alignment */
+  width: 100%;
+}
+
+/* Headline: bold, white, large, left-aligned, generous margin, no font-family */
+.hero.hero14 h1 {
+  color: #fff;
+  font-size: var(--heading-font-size-xxl);
+  font-weight: 700;
+  margin: 0 0 0 48px; /* Top, right, bottom, left */
+  line-height: 1.05;
+  text-align: left;
+  letter-spacing: 0.02em;
+  box-shadow: none;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Responsive: stack columns for small screens, reduce padding/margin/font-size */
+@media (width <= 700px) {
+  .hero.hero14 {
+    flex-direction: column;
+    min-height: 200px;
+  }
+
+  .hero.hero14 .block,
+  .hero.hero14 .no-image {
+    flex-direction: column;
+    min-height: 0;
+    height: auto;
+  }
+
+  .hero.hero14 .block div,
+  .hero.hero14 .no-image div {
+    min-height: 0;
+    height: auto;
+  }
+
+  .hero.hero14 .block div div,
+  .hero.hero14 .no-image div div {
+    padding-top: 4vh;
+  }
+
+  .hero.hero14 h1 {
+    font-size: var(--heading-font-size-xl);
+    margin-left: 20px;
   }
 }
