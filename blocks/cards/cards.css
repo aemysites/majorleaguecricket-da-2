@@ -29,13 +29,11 @@
 
 
 .cards.cards18 {
-  /* Ensure no default margins/padding interfere */
   margin: 0;
   padding: 0;
   background: var(--background-color);
 }
 
-/* Grid layout for horizontal row of cards, tight and responsive */
 .cards.cards18 ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -47,7 +45,6 @@
   align-items: stretch;
 }
 
-/* Card container: white, rounded, shadow, compact */
 .cards.cards18 li {
   background: #fff;
   border-radius: 14px;
@@ -58,11 +55,8 @@
   min-width: 0;
   margin: 0;
   transition: box-shadow .18s;
-
-  /* Remove any height constraints to allow content to dictate height */
 }
 
-/* Image block: image flush to card top and sides, no extra spacing */
 .cards.cards18 .cards-card-image {
   position: relative;
   width: 100%;
@@ -72,7 +66,6 @@
   flex-direction: column;
 }
 
-/* Thumbnail image: fill card width, flush to top/left/right, rounded top corners */
 .cards.cards18 .cards-card-image picture img {
   display: block;
   width: 100%;
@@ -86,7 +79,6 @@
   box-shadow: none;
 }
 
-/* Overlay play button: bottom left of image (ensure overlay exists in HTML) */
 .cards.cards18 .cards-card-image picture + picture {
   position: absolute;
   left: 12px;
@@ -110,7 +102,6 @@
   display: block;
 }
 
-/* Card body: compact, tight to image, grouped */
 .cards.cards18 .cards-card-body {
   padding: 14px 16px 16px;
   display: flex;
@@ -119,7 +110,6 @@
   margin: 0;
 }
 
-/* Date styling: subtle, compact */
 .cards.cards18 .cards-card-body p {
   margin: 0;
 }
@@ -133,7 +123,6 @@
   margin-bottom: 3px;
 }
 
-/* Title styling: bold, tight grouping */
 .cards.cards18 .cards-card-body p:last-child strong {
   font-size: 16px;
   color: #222;
@@ -143,7 +132,6 @@
   margin: 0;
 }
 
-/* Responsive stacking for narrow screens */
 @media (width <= 800px) {
   .cards.cards18 ul {
     grid-template-columns: 1fr;
@@ -155,9 +143,209 @@
   }
 }
 
-/* Make sure images scale gracefully */
 .cards.cards18 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
+
+
+.cards.cards13 {
+  background: #e9ebf4;
+  box-sizing: border-box;
+  margin: 0 auto 48px;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Cards grid layout using CSS Grid for precise column/row control */
+.cards.cards13 ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background: transparent;
+  place-items: stretch center;
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Responsive: 2 columns tablet, 1 column mobile */
+@media (width <= 900px) {
+  .cards.cards13 ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (width <= 600px) {
+  .cards.cards13 ul {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
+/* Individual team card: solid color, square, vertical stack, centered */
+.cards.cards13 ul li {
+  width: 180px;
+  height: 180px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  box-shadow: 0 4px 24px rgb(63 4 97 / 8%), 0 2px 4px rgb(63 4 97 / 3%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 12px;
+  transition: box-shadow 0.18s;
+  overflow: hidden;
+  gap: 0.5em;
+}
+
+/* Assign unique solid backgrounds for each card for team colors */
+.cards.cards13 ul li:nth-child(1) { background: #3F0461; }
+.cards.cards13 ul li:nth-child(2) { background: #151E79; }
+.cards.cards13 ul li:nth-child(3) { background: #D81E5B; }
+.cards.cards13 ul li:nth-child(4) { background: #F47B21; }
+.cards.cards13 ul li:nth-child(5) { background: #FFD700; }
+.cards.cards13 ul li:nth-child(6) { background: #008148; }
+
+/* Card hover effect for subtle elevation */
+.cards.cards13 ul li:hover,
+.cards.cards13 ul li:focus {
+  box-shadow: 0 8px 32px rgb(63 4 97 / 16%);
+}
+
+/* Logo: centered, spaced down from top, never cropped */
+.cards.cards13 ul li img {
+  display: block;
+  max-width: 54px;
+  max-height: 54px;
+  object-fit: contain;
+  margin: 20px auto 14px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Team name: centered, readable, wraps if needed */
+.cards.cards13 ul li h3,
+.cards.cards13 ul li h4,
+.cards.cards13 ul li h5,
+.cards.cards13 ul li .team-name {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 700;
+  line-height: 1.22;
+  color: #fff;
+  margin-bottom: 12px;
+  margin-top: 0;
+  word-break: break-word; /* Updated from deprecated 'break-word' to 'break-word: normal' */
+  width: 100%;
+  background: none;
+}
+
+/* On yellow card, switch to dark text for legibility */
+.cards.cards13 ul li:nth-child(5) h3,
+.cards.cards13 ul li:nth-child(5) h4,
+.cards.cards13 ul li:nth-child(5) h5,
+.cards.cards13 ul li:nth-child(5) .team-name,
+.cards.cards13 ul li:nth-child(5) a,
+.cards.cards13 ul li:nth-child(5) .button {
+  color: #151E79;
+}
+
+/* "View team" button/link: centered, spaced below name, flat style */
+.cards.cards13 ul li a,
+.cards.cards13 ul li .button {
+  display: inline-block;
+  background-color: rgb(0 0 0 / 13%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1em;
+  margin: 0 auto 18px;
+  padding: 0.38em 1.1em;
+  border-radius: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  max-width: 100%;
+  transition: background-color 0.18s, color 0.18s;
+}
+
+/* Button/link hover/focus for better contrast */
+.cards.cards13 ul li a:hover,
+.cards.cards13 ul li .button:hover,
+.cards.cards13 ul li a:focus,
+.cards.cards13 ul li .button:focus {
+  background-color: rgb(0 0 0 / 22%);
+  color: #FFD700;
+}
+
+/* On yellow cards, button uses navy text for legibility */
+.cards.cards13 ul li:nth-child(5) a,
+.cards.cards13 ul li:nth-child(5) .button {
+  background-color: rgb(255 255 255 / 18%);
+  color: #151E79;
+}
+
+.cards.cards13 ul li:nth-child(5) a:hover,
+.cards.cards13 ul li:nth-child(5) .button:hover {
+  background-color: rgb(255 255 255 / 32%);
+  color: #151E79;
+}
+
+/* Ensure vertical spacing inside each card: stack with space */
+
+/* Prevent unwanted list bullets and spacing */
+
+/* Center all direct children inside each card */
+.cards.cards13 ul li * {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+}
+
+/* Ensure any heading at the top is visually separated if present */
+.cards.cards13 h2,
+.cards.cards13 h1,
+.cards.cards13 h3 {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 0 32px;
+  padding: 0 20px;
+  font-weight: 700;
+  color: #fff;
+  background: repeating-linear-gradient(
+    90deg,
+    #3F0461 0 40px,
+    #151E79 40px 80px,
+    #D81E5B 80px 120px
+  );
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  font-size: var(--heading-font-size-xl);
+  letter-spacing: 0.01em;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the block has breathing room below */
