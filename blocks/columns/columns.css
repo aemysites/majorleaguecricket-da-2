@@ -242,10 +242,170 @@
   padding: 0;
 }
 
-/* Responsive: stack vertically on mobile */
 @media (width <= 600px) {
   .columns-2-cols > div {
     flex-direction: column;
     gap: 0.5em;
+  }
+}
+
+
+.columns.columns20 {
+  background: #ececf4;
+  padding: 0;
+}
+
+/* Ensure full width only if intended, otherwise leave as-is */
+
+/* .columns-container .columns-wrapper {
+  max-width: unset;
+  padding: 0;
+  margin: 0;
+} */
+
+.columns.columns20 .columns-wrapper {
+  background: #ececf4;
+  padding: 0;
+}
+
+/* --- Main Row Layout: Side by Side Cards --- */
+.columns.columns20 .columns-wrapper .columns-2-cols {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 0 40px 48px;
+  background: #ececf4;
+  position: relative;
+}
+
+/* Responsive: Stack columns on mobile */
+@media (width <= 900px) {
+  .columns.columns20 .columns-wrapper .columns-2-cols {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 16px 32px;
+  }
+}
+
+/* --- Individual Card Styling --- */
+.columns.columns20 .columns-wrapper .columns-2-cols div {
+  background: #fff;
+  box-shadow: 0 4px 32px 0 rgb(44 47 54 / 8%);
+  border-radius: 0;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Responsive card height */
+@media (width <= 900px) {
+  .columns.columns20 .columns-wrapper .columns-2-cols div {
+    min-height: 200px;
+  }
+}
+
+/* --- Proportions: Left Card 2x Wider than Right --- */
+.columns.columns20 .columns-wrapper .columns-2-cols div:first-child {
+  flex: 2 1 0;
+}
+
+.columns.columns20 .columns-wrapper .columns-2-cols div:last-child {
+  flex: 1 1 0;
+}
+
+/* --- Left Card (Video Preview) --- */
+.columns.columns20 .columns-wrapper .columns-2-cols div .columns-img-col {
+  background: #e5e6ec;
+  border-bottom: 1px solid #ececf4;
+  min-height: 240px;
+  flex: 1 1 0;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+/* Play Button - assumes an <svg> or <img> inside */
+.columns.columns20 .columns-wrapper .columns-2-cols div .columns-img-col svg,
+.columns.columns20 .columns-wrapper .columns-2-cols div .columns-img-col img {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgb(44 47 54 / 12%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  z-index: 1;
+}
+
+/* Responsive play button */
+@media (width <= 900px) {
+  .columns.columns20 .columns-wrapper .columns-2-cols div .columns-img-col {
+    min-height: 120px;
+  }
+
+  .columns.columns20 .columns-wrapper .columns-2-cols div .columns-img-col svg,
+  .columns.columns20 .columns-wrapper .columns-2-cols div .columns-img-col img {
+    left: 12px;
+    bottom: 12px;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+}
+
+/* --- Right Card ("LATEST VIDEOS") --- */
+.columns.columns20 .columns-wrapper .columns-2-cols div h3 {
+  color: #1426b2;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin: 32px 0 0 32px;
+  line-height: 1.1;
+}
+
+@media (width <= 900px) {
+  .columns.columns20 .columns-wrapper .columns-2-cols div h3 {
+    margin: 20px 0 0 16px;
+    font-size: 1.08rem;
+  }
+}
+
+/* --- Card Internal Padding (for content other than .columns-img-col) --- */
+
+/* Optional: Add a subtle dropdown indicator at bottom right of content area if present */
+
+.columns.columns20 .columns-wrapper .columns-2-cols button,
+.columns.columns20 .columns-wrapper .columns-2-cols select {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  background: #ececf4;
+  border: none;
+  color: #505050;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media (width <= 900px) {
+  .columns.columns20 .columns-wrapper .columns-2-cols button,
+  .columns.columns20 .columns-wrapper .columns-2-cols select {
+    right: 12px;
+    bottom: 12px;
   }
 }
