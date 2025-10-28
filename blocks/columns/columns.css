@@ -34,128 +34,6 @@
 }
 
 
-.columns.columns17.block.columns-3-cols {
-  background: #F4F5FB;
-  padding: 32px 0;
-}
-
-.columns.columns17.block.columns-3-cols > div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-  background: #fff;
-  border-bottom: 1px solid #EDEDED;
-  min-height: 30px;
-  padding: 8px 24px;
-}
-
-.columns.columns17.block.columns-3-cols > div > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex: 1 1 0;
-  background: none;
-  padding: 12px 0;
-}
-
-.columns.columns17.block.columns-3-cols > div > div p {
-  margin: 0 0 4px;
-}
-
-.columns.columns17.block.columns-3-cols > div > div p:first-child {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #233A84;
-  font-size: 16px;
-  letter-spacing: 1px;
-  margin-bottom: 4px;
-}
-
-.columns.columns17.block.columns-3-cols > div > div p:nth-child(2) {
-  font-size: 14px;
-  color: #233A84;
-  font-weight: 500;
-  margin-bottom: 8px;
-}
-
-.columns.columns17.block.columns-3-cols > div > div:nth-child(2) p {
-  font-size: 20px;
-  font-weight: bold;
-  color: #233A84;
-  margin: 0;
-}
-
-.columns.columns17.block.columns-3-cols img {
-  max-width: 80px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 8px;
-}
-
-@media (width <= 700px) {
-  .columns.columns17.block.columns-3-cols > div {
-    flex-direction: column;
-    gap: 24px;
-  }
-}
-
-.columns.columns17.block.columns-3-cols > div > div:first-child {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-  gap: 2px;
-}
-
-.columns.columns17.block.columns-3-cols > div > div:last-child {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 2px;
-}
-
-.columns.columns17.block.columns-3-cols > div > div:nth-child(2) {
-  font-weight: bold;
-  font-size: 14px;
-  color: #000;
-  margin: 0 16px;
-}
-
-.columns.columns17.block.columns-3-cols > div > div > p {
-  margin: 0;
-  line-height: 1.2;
-  font-family: Arial, sans-serif;
-}
-
-.columns.columns17.block.columns-3-cols > div > div > p:first-child,
-.columns.columns17.block.columns-3-cols > div > div > p:last-child {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 10px;
-  color: #000;
-}
-
-.columns.columns17.block.columns-3-cols > div > div > p:nth-child(2) {
-  font-weight: bold;
-  color: #E32614;
-  font-size: 12px;
-}
-
-.columns.columns17.block.columns-3-cols > div > div > p picture img {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-  display: block;
-  margin: 4px auto;
-}
-
-
 .columns div {
   display: flex;
   gap: 12px;
@@ -393,7 +271,7 @@
 
 .columns-2-cols {
   background: #fff;
-  padding: 0;           /* Remove extra vertical padding */
+  padding: 0;
   margin: 0;
   width: 100%;
 }
@@ -407,16 +285,16 @@
 }
 
 #latest-videos {
-  background: none;           /* Remove pill background */
-  color: #15367E;             /* Deep blue heading */
-  font-size: 2rem;            /* Larger font */
+  background: none;
+  color: #15367E;
+  font-size: 2rem;
   font-weight: bold;
-  text-transform: uppercase;  /* All-caps if original uses it */
+  text-transform: uppercase;
   margin: 0;
   padding: 0;
   letter-spacing: 1px;
 }
-/* Outer card */
+
 .columns.columns27 {
   background: #fff;
   border-radius: 16px;
@@ -759,8 +637,6 @@
   }
 }
 
-
-/* Main block styling: card appearance, padding, rounded, shadow */
 .columns.columns10 {
   background: var(--background-color);
   border-radius: 16px;
@@ -771,7 +647,6 @@
   display: block;
 }
 
-/* Primary row: 3 columns (team1 | vs | team2), with vertical centering */
 .columns.columns10 div {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -780,7 +655,6 @@
   width: 100%;
 }
 
-/* Team blocks: flex row for info and logo, tightly grouped */
 .columns.columns10 div div {
   display: flex;
   flex-direction: row;
@@ -793,7 +667,6 @@
   margin: 0;
 }
 
-/* Team info: stack name/score/extra vertically, align left/right as needed */
 .columns.columns10 div div div {
   display: flex;
   flex-direction: column;
@@ -811,7 +684,6 @@
   text-align: left;
 }
 
-/* Logo: grouped closely with score, vertically centered */
 .columns.columns10 div div img {
   height: 36px;
   width: auto;
@@ -822,7 +694,6 @@
   vertical-align: middle;
 }
 
-/* Team name (first line) */
 .columns.columns10 div div div p:first-child {
   font-size: 0.8rem;
   color: #888;
@@ -833,7 +704,6 @@
   text-transform: uppercase;
 }
 
-/* Team score (second line, dominant) */
 .columns.columns10 div div div p:nth-child(2) {
   font-size: 2.1rem;
   font-weight: 900;
@@ -844,7 +714,6 @@
   letter-spacing: 0.5px;
 }
 
-/* Subtext (third line, overs, etc) */
 .columns.columns10 div div div p:nth-child(3) {
   font-size: 0.76rem;
   color: #b1b1b1;
@@ -854,7 +723,6 @@
   opacity: 0.93;
 }
 
-/* VS divider: flex center, NO box, subtle sizing/margin */
 .columns.columns10 div div:not(:first-child, :last-child) {
   flex-direction: row;
   align-items: center;
@@ -865,7 +733,6 @@
   max-width: 58px;
 }
 
-/* VS text styling */
 .columns.columns10 div div:not(:first-child, :last-child) p {
   color: #b0b0b0;
   font-size: 1.1rem;
@@ -879,7 +746,6 @@
   border: none;
 }
 
-/* Responsive stacking on mobile screens */
 @media (width <= 700px) {
   .columns.columns10 {
     padding: 10px 2px;
@@ -915,7 +781,6 @@
   }
 }
 
-/* Override button style inside block (higher specificity if needed) */
 .columns.columns10 .button,
 .columns.columns10 a.button,
 .columns.columns10 button {
@@ -923,4 +788,92 @@
   border-radius: 2em;
   padding: 0.5em 1.2em;
   box-shadow: none;
+}
+
+
+.columns17.block.columns-3-cols > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Vertically center everything on the same line */
+  justify-content: center;
+  gap: 48px;
+  background: #fff;
+  padding: 32px 0;
+}
+
+/* Team blocks: row layout, vertically centered */
+.columns17.block.columns-3-cols > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Team text info: stack name and abbreviation vertically */
+.columns17.block.columns-3-cols > div > div p {
+  margin: 0;
+  padding: 0;
+  text-align: right; /* left team: right align text for visual balance */
+  min-width: 110px;
+}
+
+/* Team logo: fixed size, aligned with text */
+.columns17.block.columns-3-cols > div > div picture img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+/* VS: centered with divider lines */
+.columns17.block.columns-3-cols > div > div:nth-child(2) {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+  padding: 0 12px;
+}
+
+.columns17.block.columns-3-cols > div > div:nth-child(2) p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  text-transform: uppercase;
+  margin: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.columns17.block.columns-3-cols > div > div:nth-child(2)::before,
+.columns17.block.columns-3-cols > div > div:nth-child(2)::after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: #222;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.columns17.block.columns-3-cols > div > div:nth-child(2)::before { left: 0; }
+.columns17.block.columns-3-cols > div > div:nth-child(2)::after { right: 0; }
+
+/* Right team: left align text, logo on left */
+.columns17.block.columns-3-cols > div > div:last-child {
+  flex-direction: row-reverse;
+}
+
+.columns17.block.columns-3-cols > div > div:last-child p {
+  text-align: left;
+  min-width: 110px;
+}
+
+/* Optionally, style abbreviations */
+.columns17.block.columns-3-cols > div > div p:nth-child(2),
+.columns17.block.columns-3-cols > div > div p:nth-child(3) {
+  font-size: 13px;
+  color: #888;
+  font-weight: 500;
+  margin-top: 2px;
 }
