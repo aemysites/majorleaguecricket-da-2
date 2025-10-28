@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .hero-container .hero-wrapper {
   max-width: unset;
   padding: 0;
@@ -162,7 +163,6 @@
   }
 }
 
-/* HERO BLOCK: vertical stripes with bottom gradient fade, flex row layout */
 .hero.hero14 {
   width: 100vw;
   min-height: 340px;
@@ -185,7 +185,6 @@
   overflow: hidden;
 }
 
-/* Ensure both main columns fill height and align items to start */
 .hero.hero14 .block,
 .hero.hero14 .no-image {
   flex: 1 1 0;
@@ -197,7 +196,6 @@
   position: relative;
 }
 
-/* Columns: align all content to top and left, fill height */
 .hero.hero14 .block div,
 .hero.hero14 .no-image div {
   flex: 1 1 0;
@@ -210,7 +208,6 @@
   position: relative;
 }
 
-/* Headline container: push headline into top third for balance */
 .hero.hero14 .block div div,
 .hero.hero14 .no-image div div {
   display: flex;
@@ -218,16 +215,15 @@
   justify-content: flex-start;
   align-items: flex-start;
   height: 100%;
-  padding-top: 8vh; /* Top padding for vertical alignment */
+  padding-top: 8vh;
   width: 100%;
 }
 
-/* Headline: bold, white, large, left-aligned, generous margin, no font-family */
 .hero.hero14 h1 {
   color: #fff;
   font-size: var(--heading-font-size-xxl);
   font-weight: 700;
-  margin: 0 0 0 48px; /* Top, right, bottom, left */
+  margin: 0 0 0 48px;
   line-height: 1.05;
   text-align: left;
   letter-spacing: 0.02em;
@@ -237,7 +233,6 @@
   padding: 0;
 }
 
-/* Responsive: stack columns for small screens, reduce padding/margin/font-size */
 @media (width <= 700px) {
   .hero.hero14 {
     flex-direction: column;
@@ -265,5 +260,64 @@
   .hero.hero14 h1 {
     font-size: var(--heading-font-size-xl);
     margin-left: 20px;
+  }
+}
+
+
+.hero.hero11 {
+  min-height: 150px;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Full-width, vertical striped gradient background */
+  background: repeating-linear-gradient(
+    to right,
+    #FF006A 0, #FF006A 40px,
+    #180656 40px, #180656 80px
+  );
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.hero.hero11 div {
+  display: flex;
+  align-items: center;
+  flex: 1 1 0%;
+  min-width: 0;
+  justify-content: center;
+}
+
+.hero.hero11 h1,
+.hero.hero11 h2,
+.hero.hero11 h3,
+.hero.hero11 h4,
+.hero.hero11 h5,
+.hero.hero11 h6 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+}
+
+@media (width <= 700px) {
+  .hero.hero11 {
+    min-height: 96px;
+    height: auto;
+    padding: 0 12px;
+  }
+
+  .hero.hero11 h1,
+  .hero.hero11 h2,
+  .hero.hero11 h3,
+  .hero.hero11 h4,
+  .hero.hero11 h5,
+  .hero.hero11 h6 {
+    font-size: 22px;
   }
 }
