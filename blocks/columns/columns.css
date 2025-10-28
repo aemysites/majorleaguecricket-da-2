@@ -222,12 +222,13 @@
 .columns-2-cols > div {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 2.5rem;
+  padding: 2rem 2rem 0;
 }
 
 .columns-img-col img {
-  width: 56px;
-  height: auto;
+  width: 120px;
+  height: 120px;
   display: block;
 }
 
@@ -389,6 +390,33 @@
   }
 }
 
+
+.columns-2-cols {
+  background: #fff;
+  padding: 0;           /* Remove extra vertical padding */
+  margin: 0;
+  width: 100%;
+}
+
+.columns-img-col {
+  background: none;
+  border-radius: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+#latest-videos {
+  background: none;           /* Remove pill background */
+  color: #15367E;             /* Deep blue heading */
+  font-size: 2rem;            /* Larger font */
+  font-weight: bold;
+  text-transform: uppercase;  /* All-caps if original uses it */
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+/* Outer card */
 .columns.columns27 {
   background: #fff;
   border-radius: 16px;
