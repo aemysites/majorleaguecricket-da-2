@@ -255,20 +255,11 @@
   padding: 0;
 }
 
-/* Ensure full width only if intended, otherwise leave as-is */
-
-/* .columns-container .columns-wrapper {
-  max-width: unset;
-  padding: 0;
-  margin: 0;
-} */
-
 .columns.columns20 .columns-wrapper {
   background: #ececf4;
   padding: 0;
 }
 
-/* --- Main Row Layout: Side by Side Cards --- */
 .columns.columns20 .columns-wrapper .columns-2-cols {
   display: flex;
   flex-direction: row;
@@ -279,7 +270,6 @@
   position: relative;
 }
 
-/* Responsive: Stack columns on mobile */
 @media (width <= 900px) {
   .columns.columns20 .columns-wrapper .columns-2-cols {
     flex-direction: column;
@@ -288,7 +278,6 @@
   }
 }
 
-/* --- Individual Card Styling --- */
 .columns.columns20 .columns-wrapper .columns-2-cols div {
   background: #fff;
   box-shadow: 0 4px 32px 0 rgb(44 47 54 / 8%);
@@ -302,14 +291,12 @@
   padding: 0;
 }
 
-/* Responsive card height */
 @media (width <= 900px) {
   .columns.columns20 .columns-wrapper .columns-2-cols div {
     min-height: 200px;
   }
 }
 
-/* --- Proportions: Left Card 2x Wider than Right --- */
 .columns.columns20 .columns-wrapper .columns-2-cols div:first-child {
   flex: 2 1 0;
 }
@@ -318,7 +305,6 @@
   flex: 1 1 0;
 }
 
-/* --- Left Card (Video Preview) --- */
 .columns.columns20 .columns-wrapper .columns-2-cols div .columns-img-col {
   background: #e5e6ec;
   border-bottom: 1px solid #ececf4;
@@ -332,7 +318,6 @@
   height: 100%;
 }
 
-/* Play Button - assumes an <svg> or <img> inside */
 .columns.columns20 .columns-wrapper .columns-2-cols div .columns-img-col svg,
 .columns.columns20 .columns-wrapper .columns-2-cols div .columns-img-col img {
   position: absolute;
@@ -350,7 +335,6 @@
   z-index: 1;
 }
 
-/* Responsive play button */
 @media (width <= 900px) {
   .columns.columns20 .columns-wrapper .columns-2-cols div .columns-img-col {
     min-height: 120px;
@@ -366,7 +350,6 @@
   }
 }
 
-/* --- Right Card ("LATEST VIDEOS") --- */
 .columns.columns20 .columns-wrapper .columns-2-cols div h3 {
   color: #1426b2;
   font-weight: 700;
@@ -384,10 +367,6 @@
     font-size: 1.08rem;
   }
 }
-
-/* --- Card Internal Padding (for content other than .columns-img-col) --- */
-
-/* Optional: Add a subtle dropdown indicator at bottom right of content area if present */
 
 .columns.columns20 .columns-wrapper .columns-2-cols button,
 .columns.columns20 .columns-wrapper .columns-2-cols select {
@@ -409,3 +388,265 @@
     bottom: 12px;
   }
 }
+
+
+/* Outer card */
+.columns.columns27 {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px 0 rgb(20 36 70 / 7%);
+  margin: 40px auto;
+  padding: 0;
+  max-width: 1200px;
+}
+
+/* Main two-column layout */
+.columns.columns27 div {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  align-items: start;
+  gap: 0;
+  padding: 40px 44px;
+  box-sizing: border-box;
+}
+
+@media (width <= 900px) {
+  .columns.columns27 div {
+    grid-template-columns: 1fr;
+    padding: 20px 10px;
+    row-gap: 32px;
+  }
+}
+
+/* Left column (main content) */
+.columns.columns27 div div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+/* Main content column: add right border for vertical divider */
+.columns.columns27 div div:first-child {
+  padding-right: 44px;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+@media (width <= 900px) {
+  .columns.columns27 div div:first-child {
+    border-right: none;
+    padding-right: 0;
+    margin-bottom: 32px;
+  }
+}
+
+/* Right column (sidebar) */
+.columns.columns27 div div:last-child {
+  padding-left: 44px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+@media (width <= 900px) {
+  .columns.columns27 div div:last-child {
+    padding-left: 0;
+  }
+}
+
+/* Logo/image at top, centered horizontally */
+.columns.columns27 div div picture,
+.columns.columns27 div div img {
+  display: block;
+  margin: 0 auto 28px;
+  max-width: 200px;
+  height: 38px;
+  width: 38px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 14px;
+  flex-shrink: 0;
+}
+
+/* Meta row: group first two p's as a flex row above headline */
+.columns.columns27 div div .meta-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 0;
+  gap: 8px;
+}
+
+.columns.columns27 div div .meta-row * {
+  color: #a4a4a4;
+  font-size: var(--body-font-size-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  margin: 0;
+}
+
+@media (width <= 600px) {
+  .columns.columns27 div div .meta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+}
+
+/* If .meta-row not present, style first two p's inline */
+.columns.columns27 div div p:nth-of-type(1),
+.columns.columns27 div div p:nth-of-type(2) {
+  color: #a4a4a4;
+  font-size: var(--body-font-size-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.columns.columns27 div div p:nth-of-type(1) {
+  margin-right: 10px;
+}
+
+.columns.columns27 div div p:nth-of-type(2) {
+  float: right;
+}
+
+/* Headline: large, bold, left-aligned, dark color, not all-caps */
+.columns.columns27 div div h1,
+.columns.columns27 div div h2,
+.columns.columns27 div div h3 {
+  color: #0026ff;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 28px;
+  text-align: left;
+  line-height: 1.13;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: var(--heading-font-size-s);
+}
+
+/* Summary: gray, under headline, regular weight, left-aligned */
+.columns.columns27 div div p:nth-of-type(3) {
+  color: #666;
+  font-size: var(--body-font-size-s);
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 18px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+/* Remove blue/bold/underline from summary links/buttons if present */
+.columns.columns27 div div p:nth-of-type(3) a,
+.columns.columns27 div div p:nth-of-type(3) .button {
+  color: #666;
+  background: none;
+  border: none;
+  font-weight: 400;
+  text-decoration: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  line-height: inherit;
+}
+
+/* Sidebar title: blue, all-caps, bold, left-aligned */
+
+/* News list item alignment and spacing */
+.columns.columns27 div div p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 22px;
+  padding: 0;
+  min-height: 48px;
+  border-bottom: 1px solid #e0e0e0;
+  line-height: 1.2;
+  background: transparent;
+}
+
+/* Remove border for last sidebar p (More news/link) */
+.columns.columns27 div div p:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  margin-top: 24px;
+}
+
+/* News image/icon */
+
+/* News link/button: blue, left-aligned, truncated, not bold, sentence case */
+.columns.columns27 div div .button,
+.columns.columns27 div div a,
+.columns.columns27 div div button {
+  background: none;
+  border: none;
+  color: #0026ff;
+  font-weight: 500;
+  font-size: var(--body-font-size-s);
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  box-shadow: none;
+  border-radius: 0;
+  line-height: 1.2;
+  display: inline-block;
+  max-width: 220px;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* "More News" link (bottom) */
+.columns.columns27 div div p:last-child .button,
+.columns.columns27 div div p:last-child a,
+.columns.columns27 div div p:last-child button {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: var(--body-font-size-xs);
+  letter-spacing: 0.07em;
+  color: #0026ff;
+}
+
+/* Responsive: shrink sidebar and images, stack columns */
+@media (width <= 600px) {
+  .columns.columns27 div div p {
+    min-height: 40px;
+  }
+
+  .columns.columns27 div div .button,
+  .columns.columns27 div div a,
+  .columns.columns27 div div button {
+    font-size: var(--body-font-size-xs);
+    max-width: 120px;
+  }
+
+  .columns.columns27 div div picture,
+  .columns.columns27 div div img {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+  }
+}
+
+/* Remove background and corners for all inner divs */
