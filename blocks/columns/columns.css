@@ -222,12 +222,13 @@
 .columns-2-cols > div {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 2.5rem;
+  padding: 2rem 2rem 0;
 }
 
 .columns-img-col img {
-  width: 56px;
-  height: auto;
+  width: 120px;
+  height: 120px;
   display: block;
 }
 
@@ -255,20 +256,11 @@
   padding: 0;
 }
 
-/* Ensure full width only if intended, otherwise leave as-is */
-
-/* .columns-container .columns-wrapper {
-  max-width: unset;
-  padding: 0;
-  margin: 0;
-} */
-
 .columns.columns20 .columns-wrapper {
   background: #ececf4;
   padding: 0;
 }
 
-/* --- Main Row Layout: Side by Side Cards --- */
 .columns.columns20 .columns-wrapper .columns-2-cols {
   display: flex;
   flex-direction: row;
@@ -279,7 +271,6 @@
   position: relative;
 }
 
-/* Responsive: Stack columns on mobile */
 @media (width <= 900px) {
   .columns.columns20 .columns-wrapper .columns-2-cols {
     flex-direction: column;
@@ -288,7 +279,6 @@
   }
 }
 
-/* --- Individual Card Styling --- */
 .columns.columns20 .columns-wrapper .columns-2-cols div {
   background: #fff;
   box-shadow: 0 4px 32px 0 rgb(44 47 54 / 8%);
@@ -302,14 +292,12 @@
   padding: 0;
 }
 
-/* Responsive card height */
 @media (width <= 900px) {
   .columns.columns20 .columns-wrapper .columns-2-cols div {
     min-height: 200px;
   }
 }
 
-/* --- Proportions: Left Card 2x Wider than Right --- */
 .columns.columns20 .columns-wrapper .columns-2-cols div:first-child {
   flex: 2 1 0;
 }
@@ -318,7 +306,6 @@
   flex: 1 1 0;
 }
 
-/* --- Left Card (Video Preview) --- */
 .columns.columns20 .columns-wrapper .columns-2-cols div .columns-img-col {
   background: #e5e6ec;
   border-bottom: 1px solid #ececf4;
@@ -332,7 +319,6 @@
   height: 100%;
 }
 
-/* Play Button - assumes an <svg> or <img> inside */
 .columns.columns20 .columns-wrapper .columns-2-cols div .columns-img-col svg,
 .columns.columns20 .columns-wrapper .columns-2-cols div .columns-img-col img {
   position: absolute;
@@ -350,7 +336,6 @@
   z-index: 1;
 }
 
-/* Responsive play button */
 @media (width <= 900px) {
   .columns.columns20 .columns-wrapper .columns-2-cols div .columns-img-col {
     min-height: 120px;
@@ -366,7 +351,6 @@
   }
 }
 
-/* --- Right Card ("LATEST VIDEOS") --- */
 .columns.columns20 .columns-wrapper .columns-2-cols div h3 {
   color: #1426b2;
   font-weight: 700;
@@ -384,10 +368,6 @@
     font-size: 1.08rem;
   }
 }
-
-/* --- Card Internal Padding (for content other than .columns-img-col) --- */
-
-/* Optional: Add a subtle dropdown indicator at bottom right of content area if present */
 
 .columns.columns20 .columns-wrapper .columns-2-cols button,
 .columns.columns20 .columns-wrapper .columns-2-cols select {
@@ -408,4 +388,31 @@
     right: 12px;
     bottom: 12px;
   }
+}
+
+
+.columns-2-cols {
+  background: #fff;
+  padding: 0;           /* Remove extra vertical padding */
+  margin: 0;
+  width: 100%;
+}
+
+.columns-img-col {
+  background: none;
+  border-radius: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+#latest-videos {
+  background: none;           /* Remove pill background */
+  color: #15367E;             /* Deep blue heading */
+  font-size: 2rem;            /* Larger font */
+  font-weight: bold;
+  text-transform: uppercase;  /* All-caps if original uses it */
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
 }
