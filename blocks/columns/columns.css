@@ -640,8 +640,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  /* Ensure the block stretches horizontally but is not oversized vertically */
   width: 100%;
   min-height: 32px;
   box-sizing: border-box;
@@ -660,12 +658,9 @@
   box-sizing: border-box;
 }
 
-/* First column: left-aligned text, bold, black, small, with divider on right */
 .columns.columns1 div div:first-of-type {
   padding-right: 12px;
   position: relative;
-
-  /* Divider using border-right */
   border-right: 1px solid #000;
   margin-right: 14px;
   height: 18px;
@@ -683,10 +678,9 @@
   letter-spacing: 0.01em;
 }
 
-/* Second column: left-aligned, bold, red, small, tight to divider */
 .columns.columns1 div div:nth-of-type(2) {
   padding-left: 0;
-  margin-right: 24px; /* controls gap before third column */
+  margin-right: 24px;
   min-width: 0;
 }
 
@@ -701,7 +695,6 @@
   letter-spacing: 0.01em;
 }
 
-/* Third column: right-aligned, bold, black, small */
 .columns.columns1 div div:nth-of-type(3) {
   min-width: 120px;
   padding-left: 0;
@@ -719,7 +712,6 @@
   letter-spacing: 0.01em;
 }
 
-/* Responsive: stack columns at small sizes */
 @media (width <= 600px) {
   .columns.columns1 div {
     flex-direction: column;
@@ -737,4 +729,170 @@
   .columns.columns1 div div p {
     text-align: left;
   }
+}
+
+
+/* Main block styling: card appearance, padding, rounded, shadow */
+.columns.columns10 {
+  background: var(--background-color);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 6%);
+  padding: 20px 28px;
+  max-width: 640px;
+  margin: 32px auto;
+  display: block;
+}
+
+/* Primary row: 3 columns (team1 | vs | team2), with vertical centering */
+.columns.columns10 div {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 0 2rem;
+  width: 100%;
+}
+
+/* Team blocks: flex row for info and logo, tightly grouped */
+.columns.columns10 div div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.9rem;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Team info: stack name/score/extra vertically, align left/right as needed */
+.columns.columns10 div div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.18rem;
+}
+
+.columns.columns10 div div:first-child div {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.columns.columns10 div div:last-child div {
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* Logo: grouped closely with score, vertically centered */
+.columns.columns10 div div img {
+  height: 36px;
+  width: auto;
+  margin-left: 0.25rem;
+  margin-right: 0;
+  border-radius: 6px;
+  align-self: center;
+  vertical-align: middle;
+}
+
+/* Team name (first line) */
+.columns.columns10 div div div p:first-child {
+  font-size: 0.8rem;
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+/* Team score (second line, dominant) */
+.columns.columns10 div div div p:nth-child(2) {
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.05;
+  letter-spacing: 0.5px;
+}
+
+/* Subtext (third line, overs, etc) */
+.columns.columns10 div div div p:nth-child(3) {
+  font-size: 0.76rem;
+  color: #b1b1b1;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  opacity: 0.93;
+}
+
+/* VS divider: flex center, NO box, subtle sizing/margin */
+.columns.columns10 div div:not(:first-child, :last-child) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.1rem;
+  margin: 0;
+  min-width: 42px;
+  max-width: 58px;
+}
+
+/* VS text styling */
+.columns.columns10 div div:not(:first-child, :last-child) p {
+  color: #b0b0b0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 .2rem;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.7px;
+  background: none;
+  border: none;
+}
+
+/* Responsive stacking on mobile screens */
+@media (width <= 700px) {
+  .columns.columns10 {
+    padding: 10px 2px;
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .columns.columns10 div {
+    grid-template-columns: 1fr;
+    gap: 1rem 0;
+  }
+
+  .columns.columns10 div div {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .columns.columns10 div div img {
+    height: 28px;
+    margin: 0 0 8px;
+  }
+
+  .columns.columns10 div div div {
+    align-items: center;
+    text-align: center;
+  }
+
+  .columns.columns10 div div:not(:first-child, :last-child) {
+    min-width: unset;
+    max-width: unset;
+    padding: 8px 0;
+  }
+}
+
+/* Override button style inside block (higher specificity if needed) */
+.columns.columns10 .button,
+.columns.columns10 a.button,
+.columns.columns10 button {
+  font-size: var(--body-font-size-xs);
+  border-radius: 2em;
+  padding: 0.5em 1.2em;
+  box-shadow: none;
 }
