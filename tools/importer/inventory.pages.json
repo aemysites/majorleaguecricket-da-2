@@ -1,7 +1,7 @@
 {
   "templates": [
     {
-      "name": "'content hub'",
+      "name": "'content hub template'",
       "cluster": 1,
       "pages": [
         {
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "name": "'Dashboard Template'",
+      "name": "'Dashboard template'",
       "cluster": 3,
       "pages": [
         {
