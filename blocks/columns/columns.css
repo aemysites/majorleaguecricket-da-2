@@ -185,8 +185,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: #fff; /* ensure white background */
-  padding: 16px 24px; /* optional for spacing */
+  background: #fff;
+  padding: 16px 24px;
   gap: 2vw;
 }
 
@@ -216,4 +216,36 @@
   color: #999;
   margin: 0;
   text-align: right;
+}
+
+
+.columns-2-cols > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.columns-img-col img {
+  width: 56px;
+  height: auto;
+  display: block;
+}
+
+.columns-2-cols h3 {
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #222;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+/* Responsive: stack vertically on mobile */
+@media (width <= 600px) {
+  .columns-2-cols > div {
+    flex-direction: column;
+    gap: 0.5em;
+  }
 }
