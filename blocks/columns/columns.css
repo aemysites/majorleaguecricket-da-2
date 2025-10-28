@@ -426,7 +426,6 @@
   max-width: 1200px;
 }
 
-/* Main two-column layout */
 .columns.columns27 div {
   display: grid;
   grid-template-columns: 2.2fr 1fr;
@@ -444,7 +443,6 @@
   }
 }
 
-/* Left column (main content) */
 .columns.columns27 div div {
   box-sizing: border-box;
   margin: 0;
@@ -453,7 +451,6 @@
   border-radius: 0;
 }
 
-/* Main content column: add right border for vertical divider */
 .columns.columns27 div div:first-child {
   padding-right: 44px;
   border-right: 1px solid #e0e0e0;
@@ -473,7 +470,6 @@
   }
 }
 
-/* Right column (sidebar) */
 .columns.columns27 div div:last-child {
   padding-left: 44px;
   display: flex;
@@ -489,7 +485,6 @@
   }
 }
 
-/* Logo/image at top, centered horizontally */
 .columns.columns27 div div picture,
 .columns.columns27 div div img {
   display: block;
@@ -503,7 +498,6 @@
   flex-shrink: 0;
 }
 
-/* Meta row: group first two p's as a flex row above headline */
 .columns.columns27 div div .meta-row {
   display: flex;
   width: 100%;
@@ -532,7 +526,6 @@
   }
 }
 
-/* If .meta-row not present, style first two p's inline */
 .columns.columns27 div div p:nth-of-type(1),
 .columns.columns27 div div p:nth-of-type(2) {
   color: #a4a4a4;
@@ -554,7 +547,6 @@
   float: right;
 }
 
-/* Headline: large, bold, left-aligned, dark color, not all-caps */
 .columns.columns27 div div h1,
 .columns.columns27 div div h2,
 .columns.columns27 div div h3 {
@@ -569,7 +561,6 @@
   font-size: var(--heading-font-size-s);
 }
 
-/* Summary: gray, under headline, regular weight, left-aligned */
 .columns.columns27 div div p:nth-of-type(3) {
   color: #666;
   font-size: var(--body-font-size-s);
@@ -580,7 +571,6 @@
   line-height: 1.4;
 }
 
-/* Remove blue/bold/underline from summary links/buttons if present */
 .columns.columns27 div div p:nth-of-type(3) a,
 .columns.columns27 div div p:nth-of-type(3) .button {
   color: #666;
@@ -594,9 +584,6 @@
   line-height: inherit;
 }
 
-/* Sidebar title: blue, all-caps, bold, left-aligned */
-
-/* News list item alignment and spacing */
 .columns.columns27 div div p {
   display: flex;
   flex-direction: row;
@@ -609,16 +596,12 @@
   background: transparent;
 }
 
-/* Remove border for last sidebar p (More news/link) */
 .columns.columns27 div div p:last-child {
   border-bottom: none;
   margin-bottom: 0;
   margin-top: 24px;
 }
 
-/* News image/icon */
-
-/* News link/button: blue, left-aligned, truncated, not bold, sentence case */
 .columns.columns27 div div .button,
 .columns.columns27 div div a,
 .columns.columns27 div div button {
@@ -643,7 +626,6 @@
   letter-spacing: 0;
 }
 
-/* "More News" link (bottom) */
 .columns.columns27 div div p:last-child .button,
 .columns.columns27 div div p:last-child a,
 .columns.columns27 div div p:last-child button {
@@ -654,7 +636,6 @@
   color: #0026ff;
 }
 
-/* Responsive: shrink sidebar and images, stack columns */
 @media (width <= 600px) {
   .columns.columns27 div div p {
     min-height: 40px;
@@ -675,4 +656,113 @@
   }
 }
 
-/* Remove background and corners for all inner divs */
+
+.columns.columns1 {
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 0;
+  margin: 0;
+}
+
+.columns.columns1 div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  /* Ensure the block stretches horizontally but is not oversized vertically */
+  width: 100%;
+  min-height: 32px;
+  box-sizing: border-box;
+  background: none;
+  padding: 0;
+}
+
+.columns.columns1 div div {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* First column: left-aligned text, bold, black, small, with divider on right */
+.columns.columns1 div div:first-of-type {
+  padding-right: 12px;
+  position: relative;
+
+  /* Divider using border-right */
+  border-right: 1px solid #000;
+  margin-right: 14px;
+  height: 18px;
+  align-items: center;
+}
+
+.columns.columns1 div div:first-of-type p {
+  font-size: 10px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+/* Second column: left-aligned, bold, red, small, tight to divider */
+.columns.columns1 div div:nth-of-type(2) {
+  padding-left: 0;
+  margin-right: 24px; /* controls gap before third column */
+  min-width: 0;
+}
+
+.columns.columns1 div div:nth-of-type(2) p {
+  font-size: 10px;
+  font-weight: bold;
+  color: #E10000;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+/* Third column: right-aligned, bold, black, small */
+.columns.columns1 div div:nth-of-type(3) {
+  min-width: 120px;
+  padding-left: 0;
+  justify-content: flex-end;
+}
+
+.columns.columns1 div div:nth-of-type(3) p {
+  font-size: 10px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+/* Responsive: stack columns at small sizes */
+@media (width <= 600px) {
+  .columns.columns1 div {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: unset;
+  }
+
+  .columns.columns1 div div {
+    border-right: none;
+    margin-right: 0;
+    min-width: 0;
+    justify-content: flex-start;
+  }
+
+  .columns.columns1 div div p {
+    text-align: left;
+  }
+}
