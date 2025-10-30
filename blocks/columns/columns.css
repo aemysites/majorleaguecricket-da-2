@@ -1023,8 +1023,7 @@
 .columns.columns7 .block.columns img {
   display: block;
   max-width: 120px;
-  /* width: 100%; */ /* Commented out - was causing images to stretch beyond max-width */
-  width: auto; /* Added - allows images to maintain intrinsic size up to max-width */
+  width: auto;
   height: auto;
   margin: 0 auto 16px;
   border: none;
@@ -1151,9 +1150,6 @@
   box-sizing: border-box;
 }
 
-/* Each column div: vertically stack content and center align */
-
-/* Headings inside each column */
 .columns h1,
 .columns h2,
 .columns h3,
@@ -1166,13 +1162,8 @@
   text-align: center;
   margin: 0 0 18px;
   letter-spacing: 0.06em;
-
-  /* font-size intentionally NOT set, as base CSS handles sizing */
 }
 
-/* Images - logos should be centered & spaced */
-
-/* Responsive: Stack columns vertically on smaller screens */
 @media (width <= 900px) {
   .columns {
     flex-direction: column;
@@ -1188,5 +1179,128 @@
 
   .columns img {
     max-width: 96px;
+  }
+}
+
+
+.columns.columns9 {
+  background: #eff0f5;
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.columns.columns9 div {
+  box-sizing: border-box;
+}
+
+.columns.columns9 div:first-child {
+  width: 100%;
+  border-radius: 1rem;
+  background: repeating-linear-gradient(
+    90deg,
+    #2e176b 0 44px,
+    #d71a64 44px 88px
+  );
+  min-height: 110px;
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem 2.5rem 1.5rem;
+}
+
+.columns.columns9 div:first-child h1,
+.columns.columns9 div:first-child h1[id] {
+  color: #fff;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.columns.columns9 div:nth-child(2) {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+  background: none;
+}
+
+.columns.columns9 .columns-img-col {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 18px 0 rgb(44 25 81 / 7%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 270px;
+}
+
+.columns.columns9 .columns-img-col img {
+  display: block;
+  max-width: 100%;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.columns.columns9 div:nth-child(2) div:not(.columns-img-col) {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 18px 0 rgb(44 25 81 / 7%);
+  padding: 1.5rem 1.25rem 1.2rem 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  min-height: 270px;
+}
+
+.columns.columns9 div:nth-child(2) div:not(.columns-img-col) h3,
+.columns.columns9 div:nth-child(2) div:not(.columns-img-col) h3[id] {
+  color: #263896;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.15rem;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.5rem;
+}
+
+@media (width <= 900px) {
+  .columns.columns9 {
+    padding: 1.2rem 0.5rem;
+    border-radius: 0.7rem;
+    gap: 1.5rem;
+  }
+
+  .columns.columns9 div:first-child {
+    padding: 1.2rem 1rem 1rem;
+    min-height: 70px;
+    border-radius: 0.7rem;
+  }
+
+  .columns.columns9 div:first-child h1,
+  .columns.columns9 div:first-child h1[id] {
+    font-size: 1.35rem;
+    line-height: 1.2;
+  }
+
+  .columns.columns9 div:nth-child(2) {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+
+  .columns.columns9 .columns-img-col,
+  .columns.columns9 div:nth-child(2) div:not(.columns-img-col) {
+    min-height: 140px;
+    padding: 0.8rem;
+    border-radius: 0.7rem;
   }
 }
