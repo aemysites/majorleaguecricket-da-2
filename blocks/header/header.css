@@ -5,9 +5,8 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
-  height: var(--nav-height);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 /* Merged header nav selector from both base and generated CSS */
@@ -159,7 +158,6 @@ header nav .nav-sections {
   grid-area: sections; 
   flex: 1 1 auto; 
   display: flex;
-  visibility: hidden; 
   order: 2; 
   align-items: center; 
   justify-content: center;
