@@ -1,35 +1,33 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Hero (hero11) block: 1 column, 3 rows
-  // 1st row: block name
-  // 2nd row: background image (optional, none in this HTML)
-  // 3rd row: heading, subheading, CTA (only heading present)
-
-  // Header row
+  // Table header row: must match block name exactly
   const headerRow = ['Hero (hero11)'];
 
-  // Background image row (none in this case)
-  const bgRow = [''];
+  // Row 2: Background image (optional)
+  // No <img> in HTML, screenshot shows only decorative background
+  // Leave empty string for background image cell
+  const backgroundRow = [''];
 
-  // Content row: extract the heading (h1)
-  let headingEl = null;
-  // Defensive: look for h1 inside any children
-  const h1 = element.querySelector('h1');
-  if (h1) {
-    headingEl = h1;
-  } else {
-    // fallback: look for strong/other heading
-    const strong = element.querySelector('strong');
-    if (strong) headingEl = strong;
+  // Row 3: Title (Heading), Subheading, CTA (none present)
+  // Extract heading from the source HTML
+  let heading = element.querySelector('h1, h2, h3');
+  if (!heading) {
+    // Fallback: find text in .banner__teamname
+    const possibleHeading = element.querySelector('.banner__teamname');
+    if (possibleHeading && possibleHeading.textContent.trim()) {
+      heading = document.createElement('h1');
+      heading.textContent = possibleHeading.textContent.trim();
+    }
   }
-  // Only heading is present, no subheading or CTA
-  const contentRow = [headingEl ? headingEl : ''];
+  // Only heading present, no subheading or CTA
+  // Reference the heading element directly if found
+  const contentRow = [heading ? heading : ''];
 
   // Compose table
   const cells = [
     headerRow,
-    bgRow,
-    contentRow,
+    backgroundRow,
+    contentRow
   ];
 
   const table = WebImporter.DOMUtils.createTable(cells, document);

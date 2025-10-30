@@ -1,52 +1,58 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Helper: get immediate child by class
-  function getChildByClass(parent, className) {
-    return Array.from(parent.children).find((el) => el.classList && el.classList.contains(className));
+  // Find banner heading (MLC Videos)
+  let bannerHeading = '';
+  const bannerDiv = element.querySelector('.videosbanner');
+  if (bannerDiv) {
+    const h1 = bannerDiv.querySelector('h1');
+    if (h1) bannerHeading = h1.textContent.trim();
   }
 
-  // 1. Find the banner heading
-  const bannerContainer = element.querySelector('.banner__videoscontainer');
-  let bannerHeading = '';
-  if (bannerContainer) {
-    const h1 = bannerContainer.querySelector('h1');
-    if (h1 && h1.textContent.trim()) {
-      bannerHeading = h1.cloneNode(true);
+  // Find the select field (dropdown)
+  let selectField = null;
+  const selectDiv = element.querySelector('.news-season-div');
+  if (selectDiv) {
+    const select = selectDiv.querySelector('select');
+    if (select) selectField = select.cloneNode(true);
+  }
+
+  // Find the main two-column section
+  let leftColumn = null;
+  let rightColumn = null;
+  const mainDiv = element.querySelector('main');
+  if (mainDiv) {
+    const wrapperDiv = mainDiv.querySelector('.wrapper');
+    if (wrapperDiv) {
+      const videosWrapper = wrapperDiv.querySelector('.videos__wrapper');
+      if (videosWrapper) {
+        const topSec = videosWrapper.querySelector('.videos__topsec');
+        if (topSec) {
+          // Left column: video thumbnail area
+          const left = topSec.querySelector('.videos__left');
+          if (left) leftColumn = left.cloneNode(true);
+          // Right column: latest videos area
+          const right = topSec.querySelector('.videos__right');
+          if (right) rightColumn = right.cloneNode(true);
+        }
+      }
     }
   }
 
-  // 2. Find the main wrapper for the two columns
-  const main = element.querySelector('main');
-  if (!main) return;
-  const wrapper = main.querySelector('.wrapper');
-  if (!wrapper) return;
-  const videosWrapper = wrapper.querySelector('.videos__wrapper');
-  if (!videosWrapper) return;
-  const topSec = videosWrapper.querySelector('.videos__topsec');
-  if (!topSec) return;
+  // Defensive fallback: if columns not found, use empty divs
+  if (!leftColumn) leftColumn = document.createElement('div');
+  if (!rightColumn) rightColumn = document.createElement('div');
 
-  // 3. Get left and right column elements
-  const leftCol = getChildByClass(topSec, 'videos__left');
-  const rightCol = getChildByClass(topSec, 'videos__right');
+  // Build table rows
+  const headerRow = ['Columns (columns20)'];
+  // Second row: banner heading and select field in first and second columns
+  const bannerRow = [bannerHeading, selectField || ''];
+  // Third row: two columns, left and right
+  const columnsRow = [leftColumn, rightColumn];
 
-  // Defensive: If either column is missing, fallback to empty div
-  const leftContent = leftCol || document.createElement('div');
-  const rightContent = rightCol || document.createElement('div');
+  // Create the block table
+  const cells = [headerRow, bannerRow, columnsRow];
+  const block = WebImporter.DOMUtils.createTable(cells, document);
 
-  // 4. Build table rows
-  const headerRow = ['Columns block (columns20)'];
-  const columnsRow = [leftContent, rightContent];
-
-  // 5. Create the table and replace
-  const table = WebImporter.DOMUtils.createTable([
-    headerRow,
-    columnsRow,
-  ], document);
-
-  // Insert banner heading above the table if present
-  if (bannerHeading) {
-    element.parentNode.insertBefore(bannerHeading, element);
-  }
-
-  element.replaceWith(table);
+  // Replace the original element with the block table
+  element.replaceWith(block);
 }

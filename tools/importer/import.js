@@ -11,25 +11,25 @@
  */
 /* global WebImporter */
 /* eslint-disable no-console */
-import columns2Parser from './parsers/columns2.js';
-import columns1Parser from './parsers/columns1.js';
 import columns4Parser from './parsers/columns4.js';
-import columns6Parser from './parsers/columns6.js';
-import columns7Parser from './parsers/columns7.js';
+import columns1Parser from './parsers/columns1.js';
 import columns3Parser from './parsers/columns3.js';
-import columns10Parser from './parsers/columns10.js';
-import hero11Parser from './parsers/hero11.js';
+import columns5Parser from './parsers/columns5.js';
+import columns7Parser from './parsers/columns7.js';
+import columns6Parser from './parsers/columns6.js';
 import columns9Parser from './parsers/columns9.js';
-import cards8Parser from './parsers/cards8.js';
+import hero11Parser from './parsers/hero11.js';
+import columns10Parser from './parsers/columns10.js';
+import tableStripedBordered8Parser from './parsers/tableStripedBordered8.js';
+import columns13Parser from './parsers/columns13.js';
 import hero14Parser from './parsers/hero14.js';
-import columns12Parser from './parsers/columns12.js';
 import columns16Parser from './parsers/columns16.js';
-import cards13Parser from './parsers/cards13.js';
+import cards12Parser from './parsers/cards12.js';
 import cards18Parser from './parsers/cards18.js';
 import columns17Parser from './parsers/columns17.js';
-import columns20Parser from './parsers/columns20.js';
 import columns22Parser from './parsers/columns22.js';
 import columns21Parser from './parsers/columns21.js';
+import columns20Parser from './parsers/columns20.js';
 import columns27Parser from './parsers/columns27.js';
 import hero24Parser from './parsers/hero24.js';
 import headerParser from './parsers/header.js';
@@ -48,25 +48,25 @@ import {
 
 const parsers = {
   metadata: metadataParser,
-  columns2: columns2Parser,
-  columns1: columns1Parser,
   columns4: columns4Parser,
-  columns6: columns6Parser,
-  columns7: columns7Parser,
+  columns1: columns1Parser,
   columns3: columns3Parser,
-  columns10: columns10Parser,
-  hero11: hero11Parser,
+  columns5: columns5Parser,
+  columns7: columns7Parser,
+  columns6: columns6Parser,
   columns9: columns9Parser,
-  cards8: cards8Parser,
+  hero11: hero11Parser,
+  columns10: columns10Parser,
+  tableStripedBordered8: tableStripedBordered8Parser,
+  columns13: columns13Parser,
   hero14: hero14Parser,
-  columns12: columns12Parser,
   columns16: columns16Parser,
-  cards13: cards13Parser,
+  cards12: cards12Parser,
   cards18: cards18Parser,
   columns17: columns17Parser,
-  columns20: columns20Parser,
   columns22: columns22Parser,
   columns21: columns21Parser,
+  columns20: columns20Parser,
   columns27: columns27Parser,
   hero24: hero24Parser,
   ...customParsers,

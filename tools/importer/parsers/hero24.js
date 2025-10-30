@@ -1,35 +1,35 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // 1. Table header row
+  // Hero (hero24) block: 1 column, 3 rows
   const headerRow = ['Hero (hero24)'];
 
-  // 2. Background image row (no image in source HTML)
+  // Row 2: Background image (optional, none in HTML, so leave empty)
   const bgImageRow = [''];
 
-  // 3. Content row: heading and CTA button
-  const container = element.querySelector('.subscribe');
-  if (!container) return;
+  // Row 3: Heading and CTA
+  const subscribeDiv = element.querySelector('.subscribe');
+  let contentElements = [];
+  if (subscribeDiv) {
+    // Heading
+    const heading = subscribeDiv.querySelector('.subscribe__heading');
+    if (heading) {
+      contentElements.push(heading);
+    }
+    // CTA Button
+    const ctaBtn = subscribeDiv.querySelector('.subscribe__btn');
+    if (ctaBtn) {
+      contentElements.push(ctaBtn);
+    }
+  }
+  const contentRow = [contentElements];
 
-  // Find heading (h2)
-  const heading = container.querySelector('h2');
-  // Find button (CTA)
-  const button = container.querySelector('button');
-
-  // Compose content cell
-  const contentCell = [];
-  if (heading) contentCell.push(heading);
-  if (button) contentCell.push(document.createElement('br'), button);
-
-  // Compose table rows
-  const rows = [
+  // Assemble table
+  const cells = [
     headerRow,
     bgImageRow,
-    [contentCell]
+    contentRow,
   ];
 
-  // Create block table
-  const table = WebImporter.DOMUtils.createTable(rows, document);
-
-  // Replace the original element with the new table
+  const table = WebImporter.DOMUtils.createTable(cells, document);
   element.replaceWith(table);
 }

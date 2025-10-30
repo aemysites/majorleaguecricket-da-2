@@ -1,53 +1,70 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Defensive: Only parse if this looks like a teaminfo-result block
-  if (!element.classList.contains('teaminfo-result')) return;
+  // Always use the block name as the header row
+  const headerRow = ['Columns block (columns10)'];
 
-  // Helper to extract team info from a teamA/teamB element
-  function extractTeamInfo(teamEl) {
-    // Team name (full)
-    const nameFull = teamEl.querySelector('.teamnamefull');
-    // Team name (short)
-    const nameShort = teamEl.querySelector('.teamnameshort');
-    // Team logo
+  // Defensive: Get all immediate children (teamA, vs, teamB)
+  const children = Array.from(element.querySelectorAll(':scope > div'));
+
+  // Find teamA, vs, teamB
+  const teamA = children.find((el) => el.classList.contains('teamA'));
+  const vs = children.find((el) => el.classList.contains('vs'));
+  const teamB = children.find((el) => el.classList.contains('teamB'));
+
+  // Helper to extract team info block, now includes short name
+  function extractTeamBlock(teamEl) {
+    if (!teamEl) return '';
+    // Get logo
     const logoDiv = teamEl.querySelector('.teamlogo');
     const logoImg = logoDiv ? logoDiv.querySelector('img') : null;
-    // Score and overs
-    const runs = teamEl.querySelector('.runs');
-    const overs = teamEl.querySelector('.overs');
-    // Compose block: nameFull, nameShort, score, overs, logo
-    const container = document.createElement('div');
-    if (nameFull) container.appendChild(nameFull);
-    if (nameShort) container.appendChild(nameShort);
-    if (runs) container.appendChild(runs);
-    if (overs) container.appendChild(overs);
-    if (logoImg) container.appendChild(logoImg);
-    return container;
+    // Get namescore
+    const namescoreDiv = teamEl.querySelector('.namescore');
+    // Compose block: name, short name, logo, score, overs
+    const frag = document.createElement('div');
+    if (namescoreDiv) {
+      // Team name
+      const nameFull = namescoreDiv.querySelector('.teamnamefull');
+      if (nameFull) frag.appendChild(nameFull.cloneNode(true));
+      // Team short name
+      const nameShort = namescoreDiv.querySelector('.teamnameshort');
+      if (nameShort) frag.appendChild(nameShort.cloneNode(true));
+    }
+    // Logo
+    if (logoImg) frag.appendChild(logoImg.cloneNode(true));
+    if (namescoreDiv) {
+      // Score block
+      const teamscore = namescoreDiv.querySelector('.teamscore');
+      if (teamscore) {
+        const runs = teamscore.querySelector('.runs');
+        const overs = teamscore.querySelector('.overs');
+        if (runs) frag.appendChild(runs.cloneNode(true));
+        if (overs) frag.appendChild(overs.cloneNode(true));
+      }
+    }
+    return frag;
   }
 
-  // Find teamA and teamB
-  const teamA = element.querySelector('.teamA');
-  const teamB = element.querySelector('.teamB');
-  // Find the 'Vs' separator
-  const vsEl = element.querySelector('.vs');
-
-  // Defensive: If any required part is missing, skip
-  if (!teamA || !teamB || !vsEl) return;
+  // Extract 'Vs' text
+  let vsContent = '';
+  if (vs) {
+    const vsSpan = vs.querySelector('span');
+    if (vsSpan) {
+      vsContent = document.createElement('div');
+      vsContent.appendChild(vsSpan.cloneNode(true));
+    }
+  }
 
   // Compose table rows
-  const headerRow = ['Columns block (columns10)'];
-  // Second row: left team, center 'Vs', right team
   const row = [
-    extractTeamInfo(teamA),
-    vsEl,
-    extractTeamInfo(teamB)
+    extractTeamBlock(teamA),
+    vsContent,
+    extractTeamBlock(teamB)
   ];
 
+  // Build table
   const cells = [headerRow, row];
+  const table = WebImporter.DOMUtils.createTable(cells, document);
 
-  // Create the block table
-  const block = WebImporter.DOMUtils.createTable(cells, document);
-
-  // Replace the original element
-  element.replaceWith(block);
+  // Replace original element
+  element.replaceWith(table);
 }

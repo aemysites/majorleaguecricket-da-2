@@ -1,62 +1,74 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Header row for Columns block
-  const headerRow = ['Columns (columns17)'];
-
-  // Defensive: Get immediate children
+  // Helper: Get immediate children
   const children = Array.from(element.querySelectorAll(':scope > div'));
 
-  // Find teamA, vs, teamB containers
-  const teamA = children.find(child => child.classList.contains('teamA'));
-  const vs = children.find(child => child.classList.contains('vs'));
-  const teamB = children.find(child => child.classList.contains('teamB'));
+  // Defensive: Expecting three main children: teamA, vs, teamB
+  const teamA = children.find((c) => c.classList.contains('teamA'));
+  const vs = children.find((c) => c.classList.contains('vs'));
+  const teamB = children.find((c) => c.classList.contains('teamB'));
 
-  // Helper to extract team info (name, logo, short name)
-  function extractTeamInfo(teamEl, order = 'left') {
-    if (!teamEl) return '';
-    const nameScore = teamEl.querySelector('.namescore');
-    const teamNameFull = nameScore && nameScore.querySelector('.teamnamefull');
-    const teamNameShort = nameScore && nameScore.querySelector('.teamnameshort');
-    const teamLogo = teamEl.querySelector('.teamlogo img');
-    // Compose: name + short + logo (left) or logo + name + short (right)
-    const frag = document.createElement('div');
-    frag.style.display = 'flex';
-    frag.style.alignItems = 'center';
-    if (order === 'left') {
-      if (teamNameFull) frag.append(teamNameFull);
-      if (teamNameShort) frag.append(teamNameShort);
-      if (teamLogo) frag.append(teamLogo);
-    } else {
-      if (teamLogo) frag.append(teamLogo);
-      if (teamNameFull) frag.append(teamNameFull);
-      if (teamNameShort) frag.append(teamNameShort);
+  // --- Left Column (Team A) ---
+  let leftCell = document.createElement('div');
+  if (teamA) {
+    // Get team name (full and short)
+    const nameFull = teamA.querySelector('.teamnamefull');
+    const nameShort = teamA.querySelector('.teamnameshort');
+    // Get logo
+    const logo = teamA.querySelector('.teamlogo img');
+    // Compose cell: name above logo, include all text
+    if (nameFull) {
+      const nameDiv = document.createElement('div');
+      nameDiv.textContent = nameFull.textContent.trim();
+      leftCell.appendChild(nameDiv);
     }
-    return frag;
+    if (nameShort) {
+      const shortDiv = document.createElement('div');
+      shortDiv.textContent = nameShort.textContent.trim();
+      leftCell.appendChild(shortDiv);
+    }
+    if (logo) leftCell.appendChild(logo.cloneNode(true));
   }
 
-  // Left column: WASHINGTON FREEDOM + WF + logo
-  const leftCol = extractTeamInfo(teamA, 'left');
-
-  // Center column: Vs text
-  let centerCol = '';
+  // --- Middle Column (Vs) ---
+  let middleCell = document.createElement('div');
   if (vs) {
-    const vsSpan = vs.querySelector('span');
-    if (vsSpan) centerCol = vsSpan;
-    else centerCol = vs.textContent;
+    middleCell.textContent = vs.textContent.trim();
+    middleCell.style.textAlign = 'center';
   }
 
-  // Right column: TEXAS SUPER KINGS + TSK + logo
-  const rightCol = extractTeamInfo(teamB, 'right');
+  // --- Right Column (Team B) ---
+  let rightCell = document.createElement('div');
+  if (teamB) {
+    // Get logo
+    const logo = teamB.querySelector('.teamlogo img');
+    // Get team name (full and short)
+    const nameFull = teamB.querySelector('.teamnamefull');
+    const nameShort = teamB.querySelector('.teamnameshort');
+    // Compose cell: logo above name, include all text
+    if (logo) rightCell.appendChild(logo.cloneNode(true));
+    if (nameFull) {
+      const nameDiv = document.createElement('div');
+      nameDiv.textContent = nameFull.textContent.trim();
+      rightCell.appendChild(nameDiv);
+    }
+    if (nameShort) {
+      const shortDiv = document.createElement('div');
+      shortDiv.textContent = nameShort.textContent.trim();
+      rightCell.appendChild(shortDiv);
+    }
+  }
 
-  // Compose table rows
-  const rows = [
-    headerRow,
-    [leftCol, centerCol, rightCol]
-  ];
+  // Table rows
+  const headerRow = ['Columns block (columns17)'];
+  const columnsRow = [leftCell, middleCell, rightCell];
 
   // Create block table
-  const block = WebImporter.DOMUtils.createTable(rows, document);
+  const block = WebImporter.DOMUtils.createTable([
+    headerRow,
+    columnsRow,
+  ], document);
 
-  // Replace original element
+  // Replace element
   element.replaceWith(block);
 }
