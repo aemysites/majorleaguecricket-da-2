@@ -1,7 +1,7 @@
 {
   "templates": [
     {
-      "name": "'content hub template'",
+      "name": "'Multi-purpose content layout'",
       "cluster": 1,
       "pages": [
         {
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "name": "'Directory Listing'",
+      "name": "Directory Listing",
       "cluster": 2,
       "pages": [
         {
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "name": "'Dashboard template'",
+      "name": "\"Dashboard Template\"",
       "cluster": 3,
       "pages": [
         {
