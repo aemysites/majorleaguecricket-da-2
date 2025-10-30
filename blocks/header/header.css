@@ -7,7 +7,7 @@ header .nav-wrapper {
   position: fixed;
   height: var(--nav-height);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 /* Merged header nav selector from both base and generated CSS */
