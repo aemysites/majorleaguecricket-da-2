@@ -1023,7 +1023,8 @@
 .columns.columns7 .block.columns img {
   display: block;
   max-width: 120px;
-  width: 100%;
+  /* width: 100%; */ /* Commented out - was causing images to stretch beyond max-width */
+  width: auto; /* Added - allows images to maintain intrinsic size up to max-width */
   height: auto;
   margin: 0 auto 16px;
   border: none;
