@@ -1,51 +1,39 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Find the main footer container (the columns)
-  const footerContainer = element.querySelector('.footer__container');
-  if (!footerContainer) return;
+  // Find the main wrapper that contains all columns
+  const wrapper = element.querySelector('.footer__container');
+  if (!wrapper) return;
 
-  // Get all direct column divs inside the container
-  const columns = Array.from(footerContainer.querySelectorAll(':scope > .footer__column, :scope > .footer__column--1'));
+  // Get all column elements (including the first logo/address column)
+  const columns = Array.from(wrapper.children).filter(col =>
+    col.classList.contains('footer__column') || col.classList.contains('footer__column--1')
+  );
   if (!columns.length) return;
 
-  // Helper to clone and clean a column
-  function cleanColumn(col) {
-    // Clone the node so we don't mutate the original
-    const clone = col.cloneNode(true);
-    // Remove all attributes from all descendants
-    clone.querySelectorAll('*').forEach((el) => {
-      el.removeAttribute('_ngcontent-foq-c9');
-      el.removeAttribute('_ngcontent-foq-c11');
-      el.removeAttribute('_nghost-foq-c9');
-      el.removeAttribute('data-hlx-imp-color');
-      // Only remove class if it is empty
-      if (el.className === '') {
-        el.removeAttribute('class');
-      }
-    });
-    // Remove attributes from the root node
-    clone.removeAttribute('_ngcontent-foq-c9');
-    clone.removeAttribute('_ngcontent-foq-c11');
-    clone.removeAttribute('_nghost-foq-c9');
-    clone.removeAttribute('data-hlx-imp-color');
-    if (clone.className === '') {
-      clone.removeAttribute('class');
+  // Helper to clean up extraneous attributes from a node
+  function cleanNode(node) {
+    // Remove Angular and data-hlx-imp-color attributes
+    if (node.nodeType === 1) {
+      node.removeAttribute('_ngcontent-hva-c9');
+      node.removeAttribute('_ngcontent-hva-c11');
+      node.removeAttribute('data-hlx-imp-color');
+      node.removeAttribute('class');
     }
-    return clone;
+    // Recursively clean children
+    Array.from(node.childNodes).forEach(cleanNode);
+    return node;
   }
 
-  // Build the header row
-  const headerRow = ['Columns block (columns21)'];
+  // Build the cells for the second row (one cell per column)
+  const secondRow = columns.map((col) => cleanNode(col.cloneNode(true)));
 
-  // Build the columns row: each cell is the cleaned content of a column
-  const columnsRow = columns.map(cleanColumn);
+  // Create the table rows
+  const rows = [
+    ['Columns block (columns21)'], // Header row
+    secondRow,
+  ];
 
-  // Create the table
-  const table = WebImporter.DOMUtils.createTable([
-    headerRow,
-    columnsRow
-  ], document);
-
-  // Replace the original element with the new table
-  element.replaceWith(table);
+  // Replace the original element with the block table
+  const block = WebImporter.DOMUtils.createTable(rows, document);
+  element.replaceWith(block);
 }

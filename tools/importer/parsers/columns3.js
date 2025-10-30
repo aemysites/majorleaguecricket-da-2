@@ -1,79 +1,57 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Find the footer element
-  const footer = element.querySelector('footer');
-  if (!footer) {
-    // Defensive fallback: if no footer, just wrap the element
-    const block = WebImporter.DOMUtils.createTable([
-      ['Columns (columns3)'],
-      [element]
-    ], document);
-    element.replaceWith(block);
-    return;
-  }
+  // Get the columns from the footer
+  const columns = Array.from(element.querySelectorAll('.footer__container > .footer__column'));
 
-  // Get columns: logo/addresses, teams, site map, about
-  const col1 = footer.querySelector('.footer__column--1');
-  const cols = footer.querySelectorAll('.footer__column');
-  // Defensive: ensure we have all columns
-  if (!col1 || cols.length < 3) {
-    const block = WebImporter.DOMUtils.createTable([
-      ['Columns (columns3)'],
-      [footer]
-    ], document);
-    element.replaceWith(block);
-    return;
-  }
+  // Defensive: fallback if structure changes
+  if (columns.length < 4) return;
 
-  // Compose column content for maximum text coverage
-  // Column 1: logo, addresses, copyright
-  const col1Content = document.createElement('div');
-  // Logo
-  const logo = col1.querySelector('.footer__logo');
-  if (logo) col1Content.appendChild(logo.cloneNode(true));
-  // Addresses
-  const addressSec = col1.querySelector('.footer__addresssec');
-  if (addressSec) col1Content.appendChild(addressSec.cloneNode(true));
-  // Copyright
+  // --- Column 1: Logo, addresses, copyright ---
+  const col1 = columns[0];
+  const logoRow = col1.querySelector('.footer__logorow');
+  const logoImg = logoRow ? logoRow.querySelector('img') : null;
+  const addressSec = logoRow ? logoRow.querySelector('.footer__addresssec') : null;
+  const addresses = addressSec ? Array.from(addressSec.children) : [];
   const copyright = col1.querySelector('.footer__copy');
-  if (copyright) col1Content.appendChild(copyright.cloneNode(true));
+  // Compose column 1 cell
+  const col1Cell = [];
+  if (logoImg) col1Cell.push(logoImg);
+  addresses.forEach(addr => col1Cell.push(addr));
+  if (copyright) col1Cell.push(copyright);
 
-  // Column 2: Teams
-  const col2 = cols[0];
-  const col2Content = document.createElement('div');
+  // --- Column 2: Teams ---
+  const col2 = columns[1];
+  const col2Cell = [];
   const col2Title = col2.querySelector('.footer__column--title');
-  if (col2Title) col2Content.appendChild(col2Title.cloneNode(true));
+  if (col2Title) col2Cell.push(col2Title);
   const col2Links = col2.querySelector('.footer__column--links');
-  if (col2Links) col2Content.appendChild(col2Links.cloneNode(true));
+  if (col2Links) col2Cell.push(col2Links);
 
-  // Column 3: Site Map
-  const col3 = cols[1];
-  const col3Content = document.createElement('div');
+  // --- Column 3: Site Map ---
+  const col3 = columns[2];
+  const col3Cell = [];
   const col3Title = col3.querySelector('.footer__column--title');
-  if (col3Title) col3Content.appendChild(col3Title.cloneNode(true));
+  if (col3Title) col3Cell.push(col3Title);
   const col3Links = col3.querySelector('.footer__column--links');
-  if (col3Links) col3Content.appendChild(col3Links.cloneNode(true));
+  if (col3Links) col3Cell.push(col3Links);
 
-  // Column 4: About + Minor League Cricket + social
-  const col4 = cols[2];
-  const col4Content = document.createElement('div');
+  // --- Column 4: About + Social ---
+  const col4 = columns[3];
+  const col4Cell = [];
   const col4Title = col4.querySelector('.footer__column--title');
-  if (col4Title) col4Content.appendChild(col4Title.cloneNode(true));
+  if (col4Title) col4Cell.push(col4Title);
   const col4Links = col4.querySelector('.footer__column--links');
-  if (col4Links) col4Content.appendChild(col4Links.cloneNode(true));
-  // Minor League Cricket link (may be outside .footer__column--links)
-  const mlcLink = col4.querySelector('a[href*="minorleaguecricket"]');
-  if (mlcLink && (!col4Links || !col4Links.contains(mlcLink))) col4Content.appendChild(mlcLink.cloneNode(true));
-  // Social icons
+  if (col4Links) col4Cell.push(col4Links);
   const social = col4.querySelector('.footer__social');
-  if (social) col4Content.appendChild(social.cloneNode(true));
+  if (social) col4Cell.push(social);
 
-  // Compose table rows
-  const headerRow = ['Columns (columns3)'];
-  const columnsRow = [col1Content, col2Content, col3Content, col4Content];
-  const rows = [headerRow, columnsRow];
+  // Table header
+  const headerRow = ['Columns block (columns3)'];
+  // Table content row
+  const contentRow = [col1Cell, col2Cell, col3Cell, col4Cell];
 
-  // Create and replace block
-  const block = WebImporter.DOMUtils.createTable(rows, document);
+  // Create table
+  const cells = [headerRow, contentRow];
+  const block = WebImporter.DOMUtils.createTable(cells, document);
   element.replaceWith(block);
 }

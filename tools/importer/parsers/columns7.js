@@ -1,50 +1,62 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Helper: Get all top-level sponsor columns
-  const columns = [];
-  // Defensive: Only select direct children that are columns
-  const columnDivs = Array.from(element.querySelectorAll(':scope > div'));
+  // Block header row must match target block name exactly
+  const headerRow = ['Columns block (columns7)'];
 
-  columnDivs.forEach((colDiv) => {
-    // Each column: find heading and all sponsor containers
-    let heading = null;
-    // Try h3 first, then div with heading class
-    heading = colDiv.querySelector('h3, .sponsors__heading');
-    // Gather all sponsor containers (may be nested)
-    const sponsorContainers = Array.from(colDiv.querySelectorAll('.sponsors__container'));
-    // Compose column content
-    const cellContent = [];
-    if (heading) cellContent.push(heading);
-    // For each sponsor container, add its content (usually <a><img></a>)
-    sponsorContainers.forEach((container) => {
-      // If container is an <a>, use it directly
-      if (container.tagName === 'A') {
-        cellContent.push(container);
-      } else {
-        // Otherwise, get all links/images inside
-        const links = Array.from(container.querySelectorAll('a'));
-        if (links.length) {
-          cellContent.push(...links);
-        } else {
-          // Fallback: images directly
-          const imgs = Array.from(container.querySelectorAll('img'));
-          cellContent.push(...imgs);
-        }
+  // Helper to extract column content
+  function extractColumnContent(colEl) {
+    const frag = document.createDocumentFragment();
+    // Heading: could be div or h3
+    const heading = colEl.querySelector('.sponsors__heading, h3.sponsors__heading');
+    if (heading) {
+      // preserve heading level and formatting
+      const headingClone = document.createElement(heading.tagName.toLowerCase());
+      headingClone.textContent = heading.textContent.trim();
+      frag.appendChild(headingClone);
+    }
+    // All sponsor containers/images
+    const containers = colEl.querySelectorAll('.sponsors__container');
+    containers.forEach(container => {
+      // Each container may have an anchor with an image
+      const anchor = container.querySelector('a[href]');
+      if (anchor) {
+        // Reference the anchor directly
+        frag.appendChild(anchor);
       }
     });
-    columns.push(cellContent);
-  });
+    // If there are nested containers (e.g., .sponsors_Signature)
+    const nested = colEl.querySelectorAll('.sponsors_Signature .sponsors__container');
+    nested.forEach(container => {
+      const anchor = container.querySelector('a[href]');
+      if (anchor) {
+        frag.appendChild(anchor);
+      }
+    });
+    return frag;
+  }
 
-  // Table rows
-  const headerRow = ['Columns block (columns7)'];
-  const contentRow = columns;
+  // Gather the three columns in order
+  const columns = [];
+  const autoPartner = element.querySelector('.offPartner');
+  const signPartner = element.querySelector('.signPartner');
+  const apparelPartner = element.querySelector('.sponsors-3');
 
-  // Build table
-  const table = WebImporter.DOMUtils.createTable([
-    headerRow,
-    contentRow
-  ], document);
+  // Defensive: Only push if present
+  if (autoPartner) columns.push(extractColumnContent(autoPartner));
+  if (signPartner) columns.push(extractColumnContent(signPartner));
+  if (apparelPartner) columns.push(extractColumnContent(apparelPartner));
 
-  // Replace element
+  // Edge case: If any column is missing, fill with empty cell
+  while (columns.length < 3) {
+    columns.push(document.createElement('div'));
+  }
+
+  // Table rows: header, then columns
+  const rows = [headerRow, columns];
+
+  // Create the block table
+  const table = WebImporter.DOMUtils.createTable(rows, document);
+
+  // Replace the original element
   element.replaceWith(table);
 }

@@ -1,27 +1,34 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Hero (hero14) block: 1 column, 3 rows
-  // Row 1: block name
-  // Row 2: background image (none in HTML, so leave empty)
-  // Row 3: headline, subheading, CTA (only headline present)
+  // Table header row for Hero (hero14)
+  const headerRow = ['Hero (hero14)'];
 
-  // Find the headline (h1)
-  let headline = element.querySelector('h1');
-  // Defensive: if not found, fallback to any heading
-  if (!headline) {
-    headline = element.querySelector('h2, h3, h4, h5, h6');
+  // Defensive: Find the main heading (h1) inside the block
+  let heading = element.querySelector('h1');
+  // If not found, fallback to h2, h3, or strong text
+  if (!heading) {
+    heading = element.querySelector('h2, h3, strong');
   }
 
-  // Build the table rows
-  const headerRow = ['Hero (hero14)'];
-  const backgroundRow = ['']; // No image in HTML, leave empty
-  const contentRow = [headline ? headline : ''];
+  // Row 2: Background image (none in this HTML)
+  // Screenshot shows a decorative background, but no <img> in HTML
+  // Leave cell empty as per block description if no image
+  const bgImageRow = [''];
 
-  const table = WebImporter.DOMUtils.createTable([
+  // Row 3: Content (heading, subheading, CTA)
+  // Only heading present in this case
+  const contentRow = [heading ? heading : ''];
+
+  // Compose the table
+  const cells = [
     headerRow,
-    backgroundRow,
-    contentRow
-  ], document);
+    bgImageRow,
+    contentRow,
+  ];
 
-  element.replaceWith(table);
+  // Create the block table
+  const block = WebImporter.DOMUtils.createTable(cells, document);
+
+  // Replace the original element with the block table
+  element.replaceWith(block);
 }

@@ -1,67 +1,46 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Helper to get direct children by class
-  function getChildByClass(parent, className) {
-    return Array.from(parent.children).find((el) => el.classList && el.classList.contains(className));
-  }
+  // Table header row
+  const headerRow = ['Columns (columns9)'];
 
-  // Find the banner heading (MLC News)
+  // Extract the banner heading (MLC News)
   let bannerHeading = '';
   const bannerH1 = element.querySelector('.banner__h1--news');
-  if (bannerH1 && bannerH1.textContent.trim()) {
-    bannerHeading = bannerH1.cloneNode(true);
+  if (bannerH1) {
+    bannerHeading = bannerH1.textContent.trim();
   }
 
-  // Find the main wrapper for the columns block
-  const wrapper = element.querySelector('.wrapper');
-  if (!wrapper) return;
-
-  // Find the two main columns: left and right
-  const newsTopSec = wrapper.querySelector('.news__topsec');
-  if (!newsTopSec) return;
-
-  // Left column: image and supporting content
-  const leftCol = getChildByClass(newsTopSec, 'news__left');
-  // Right column: heading and news links
-  const rightCol = getChildByClass(newsTopSec, 'news__right');
-
-  // --- Left column content ---
-  let leftContent = [];
-  if (leftCol) {
-    // Find the banner image
-    const img = leftCol.querySelector('img');
-    if (img) leftContent.push(img.cloneNode(true));
-  }
-
-  // --- Right column content ---
-  let rightContent = [];
-  if (rightCol) {
-    // Heading
-    const heading = rightCol.querySelector('.news__right--heading');
-    if (heading && heading.textContent.trim()) {
-      rightContent.push(heading.cloneNode(true));
+  // --- COLUMN 1: Left (Image) ---
+  let leftColContent = '';
+  const newsTopSec = element.querySelector('.news__topsec');
+  if (newsTopSec) {
+    const leftDiv = newsTopSec.querySelector('.news__left');
+    if (leftDiv) {
+      const img = leftDiv.querySelector('img');
+      if (img) leftColContent = img;
     }
   }
 
-  // --- Dropdown/select at bottom right ---
-  const selectDiv = wrapper.querySelector('.news-season-div');
-  if (selectDiv) {
-    const select = selectDiv.querySelector('select');
-    if (select) {
-      rightContent.push(select.cloneNode(true));
+  // --- COLUMN 2: Right (Heading) ---
+  let rightColContent = '';
+  if (newsTopSec) {
+    const rightDiv = newsTopSec.querySelector('.news__right');
+    if (rightDiv) {
+      const heading = rightDiv.querySelector('.news__right--heading');
+      if (heading) rightColContent = heading;
     }
   }
 
-  // Table structure
-  const headerRow = ['Columns block (columns9)'];
-  // The columns row should be the second row (left, right)
-  // Banner heading should be included as its own row above columns
-  const cells = [headerRow];
-  if (bannerHeading) {
-    cells.push([bannerHeading]);
-  }
-  cells.push([leftContent, rightContent]);
+  // Compose the table rows
+  const cells = [
+    headerRow,
+    [bannerHeading], // Banner heading as its own row (single cell)
+    [leftColContent, rightColContent]
+  ];
 
+  // Create the block table
   const block = WebImporter.DOMUtils.createTable(cells, document);
+
+  // Replace the original element
   element.replaceWith(block);
 }

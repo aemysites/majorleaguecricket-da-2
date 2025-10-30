@@ -1,46 +1,56 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Cards (cards18) block: 2 columns, first row is header, each subsequent row is [image(s), text content]
+  // Cards (cards18) block parsing
+  // 1. Header row
   const headerRow = ['Cards (cards18)'];
-  const rows = [headerRow];
 
-  // Find all card elements (videos__video)
-  const cardEls = element.querySelectorAll('.videos__video');
+  // 2. Find all card elements (specific selector for this structure)
+  const cardElements = element.querySelectorAll('.videos__video');
 
-  cardEls.forEach(cardEl => {
-    // Image cell: include both the thumbnail and the play icon
-    const images = [];
-    const thumbImg = cardEl.querySelector('.videos__thumbnailsec--thumbnail');
-    if (thumbImg) images.push(thumbImg);
-    const playIconImg = cardEl.querySelector('.videos__playicon');
-    if (playIconImg) images.push(playIconImg);
-    const imageCell = images.length === 1 ? images[0] : images;
-
-    // Text content: date and title
-    const desc = cardEl.querySelector('.videos__desc');
-    let textCell = '';
-    if (desc) {
-      const dateEl = desc.querySelector('.videos__desc-date');
-      const titleEl = desc.querySelector('.videos__desc-title');
-      const textFragments = [];
-      if (dateEl) {
-        const dateDiv = document.createElement('div');
-        dateDiv.textContent = dateEl.textContent.trim();
-        textFragments.push(dateDiv);
-      }
-      if (titleEl) {
-        const titleDiv = document.createElement('div');
-        const strong = document.createElement('strong');
-        strong.textContent = titleEl.textContent.trim();
-        titleDiv.appendChild(strong);
-        textFragments.push(titleDiv);
-      }
-      textCell = textFragments;
+  // 3. Build rows for each card
+  const rows = Array.from(cardElements).map(card => {
+    // --- Image cell ---
+    // Get both the main thumbnail image and play icon overlay
+    const thumbnailSec = card.querySelector('.videos__thumbnailsec');
+    let thumbnailImg = thumbnailSec ? thumbnailSec.querySelector('img.videos__thumbnailsec--thumbnail') : null;
+    let playIconImg = thumbnailSec ? thumbnailSec.querySelector('img.videos__playicon') : null;
+    // Defensive: fallback to first/second img if not found
+    if (!thumbnailImg && thumbnailSec) {
+      thumbnailImg = thumbnailSec.querySelector('img');
     }
+    // Compose image cell with both images (if present)
+    const imageCell = document.createElement('div');
+    if (thumbnailImg) imageCell.appendChild(thumbnailImg.cloneNode(true));
+    if (playIconImg) imageCell.appendChild(playIconImg.cloneNode(true));
 
-    rows.push([imageCell, textCell]);
+    // --- Text cell ---
+    const desc = card.querySelector('.videos__desc');
+    // Date
+    const dateP = desc ? desc.querySelector('.videos__desc-date') : null;
+    // Title
+    const titleP = desc ? desc.querySelector('.videos__desc-title') : null;
+    // Compose text cell: date (small), then title (bold)
+    const textCell = document.createElement('div');
+    if (dateP) {
+      const dateDiv = document.createElement('div');
+      dateDiv.textContent = dateP.textContent.trim();
+      dateDiv.style.fontSize = 'smaller';
+      textCell.appendChild(dateDiv);
+    }
+    if (titleP) {
+      const titleDiv = document.createElement('div');
+      titleDiv.textContent = titleP.textContent.trim();
+      titleDiv.style.fontWeight = 'bold';
+      textCell.appendChild(titleDiv);
+    }
+    // --- Row: [images, text] ---
+    return [imageCell, textCell];
   });
 
-  const table = WebImporter.DOMUtils.createTable(rows, document);
-  element.replaceWith(table);
+  // 4. Compose table
+  const cells = [headerRow, ...rows];
+  const block = WebImporter.DOMUtils.createTable(cells, document);
+
+  // 5. Replace original element
+  element.replaceWith(block);
 }

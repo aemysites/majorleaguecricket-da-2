@@ -1,30 +1,30 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Helper to get immediate child columns
-  function getFooterColumns(wrapper) {
-    // Find all direct children with class 'footer__column' inside the main wrapper
-    return Array.from(wrapper.querySelectorAll(':scope > .footer__column, :scope > .footer__column--1'));
-  }
-
-  // Find the main wrapper containing columns
-  const wrapper = element.querySelector('.footer__container');
-  if (!wrapper) return;
-
-  // Get all columns (there are 4 visually)
-  const columns = getFooterColumns(wrapper);
-  if (columns.length === 0) return;
-
-  // Header row
+  // Columns block header row
   const headerRow = ['Columns block (columns22)'];
 
-  // Build the second row: each cell is a column's content
-  // For robustness, reference the entire column element for each cell
-  const contentRow = columns.map((col) => col);
+  // Find the main footer columns container
+  const container = element.querySelector('.footer__container');
+  if (!container) return;
 
-  // Create the table
-  const cells = [headerRow, contentRow];
-  const block = WebImporter.DOMUtils.createTable(cells, document);
+  // Get all columns (should be 4)
+  const columns = Array.from(container.children);
+  if (columns.length === 0) return;
 
-  // Replace the original element with the block table
-  element.replaceWith(block);
+  // For each column, extract only the inner content (not the outer column div)
+  // This means: for each column, create a fragment containing all its children
+  const secondRow = columns.map(col => {
+    const frag = document.createDocumentFragment();
+    Array.from(col.childNodes).forEach(child => frag.appendChild(child.cloneNode(true)));
+    return frag;
+  });
+
+  // Create the table for the Columns block
+  const table = WebImporter.DOMUtils.createTable([
+    headerRow,
+    secondRow
+  ], document);
+
+  // Replace the original element with the new block table
+  element.replaceWith(table);
 }

@@ -1,50 +1,35 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Defensive: Only parse if this looks like a match header block
+  // Only parse if this looks like a match header block
   if (!element.classList.contains('matchheader')) return;
 
-  // Header row for the block
-  const headerRow = ['Columns block (columns1)'];
+  // Find the match info (number and date/time)
+  const matchInfoDiv = Array.from(element.children).find(child => child.classList.contains('matchinfo'));
+  // Find the venue
+  const venueDiv = Array.from(element.children).find(child => child.classList.contains('matchvenue'));
 
-  // Get the match info and venue
-  const matchInfoDiv = element.querySelector('.matchinfo');
-  const venueDiv = element.querySelector('.matchvenue');
-
-  // Defensive: Make sure required elements exist
   if (!matchInfoDiv || !venueDiv) return;
 
-  // Get the <ul> and its <li>s
+  // Get the <ul> inside matchinfo
   const ul = matchInfoDiv.querySelector('ul');
   if (!ul) return;
   const lis = ul.querySelectorAll('li');
-
-  // Defensive: Expecting at least 2 <li>s
   if (lis.length < 2) return;
 
-  // Create first column: Match number (bold)
-  const matchNo = document.createElement('span');
-  matchNo.style.fontWeight = 'bold';
-  matchNo.textContent = lis[0].textContent.trim();
+  // Extract plain text for each cell
+  const matchNoText = lis[0].textContent.trim();
+  const dateTimeText = lis[1].textContent.trim();
+  const venueText = venueDiv.textContent.trim();
 
-  // Second column: Date/time (date/time in red)
-  const dateTime = document.createElement('span');
-  // We'll make the entire date/time red
-  dateTime.style.color = 'red';
-  dateTime.textContent = lis[1].textContent.trim();
+  // Table header row
+  const headerRow = ['Columns block (columns1)'];
+  // Table content row: three columns of plain text
+  const contentRow = [matchNoText, dateTimeText, venueText];
 
-  // Third column: Venue (bold, right aligned)
-  const venue = document.createElement('span');
-  venue.style.fontWeight = 'bold';
-  venue.style.float = 'right';
-  venue.textContent = venueDiv.textContent.trim();
+  // Build the table
+  const cells = [headerRow, contentRow];
+  const block = WebImporter.DOMUtils.createTable(cells, document);
 
-  // Build the row
-  const row = [matchNo, dateTime, venue];
-
-  // Create the table
-  const cells = [headerRow, row];
-  const table = WebImporter.DOMUtils.createTable(cells, document);
-
-  // Replace the original element
-  element.replaceWith(table);
+  // Replace original element with block
+  element.replaceWith(block);
 }
