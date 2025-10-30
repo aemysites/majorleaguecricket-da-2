@@ -882,6 +882,8 @@
   .columns.columns1 .block.columns-3-cols div div p {
     text-align: left;
   }
+}
+
 .columns17.block.columns-3-cols > div {
   display: flex;
   flex-direction: row;
