@@ -369,8 +369,8 @@
       "name": "Columns",
       "cluster": 2,
       "source": "Columns block",
-      "target": "Columns block (columns2)",
-      "key": "columns2",
+      "target": "Columns block (columns-scores)",
+      "key": "columns-scores",
       "instances": [
         {
           "url": "https://www.majorleaguecricket.com/matches",

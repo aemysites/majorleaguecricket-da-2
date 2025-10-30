@@ -1,7 +1,7 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Header row for Columns block (columns2)
-  const headerRow = ['Columns block (columns2)'];
+  // Header row for Columns block (columns-scores)
+  const headerRow = ['Columns block (columns-scores)'];
 
   // Defensive: get all direct children (should be teamA, vs, teamB)
   const children = Array.from(element.children);

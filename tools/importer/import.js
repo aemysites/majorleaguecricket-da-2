@@ -11,7 +11,7 @@
  */
 /* global WebImporter */
 /* eslint-disable no-console */
-import columns2Parser from './parsers/columns2.js';
+import columnsScoresParser from './parsers/columns2.js';
 import columns1Parser from './parsers/columns1.js';
 import columns4Parser from './parsers/columns4.js';
 import columns6Parser from './parsers/columns6.js';
@@ -48,7 +48,7 @@ import {
 
 const parsers = {
   metadata: metadataParser,
-  columns2: columns2Parser,
+  'columns-scores': columnsScoresParser,
   columns1: columns1Parser,
   columns4: columns4Parser,
   columns6: columns6Parser,
